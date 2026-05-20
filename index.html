@@ -1,0 +1,2578 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Godoy Auto Detailing | Premium Mobile Detailing in London & Surrey</title>
+    <meta
+      name="description"
+      content="Premium mobile detailing, valeting, deep cleaning, paint enhancement and ceramic protection for family cars, luxury, performance and supercars across London and Surrey."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Godoy Auto Detailing" />
+    <meta name="theme-color" content="#101417" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Godoy Auto Detailing | Premium Mobile Detailing Across London & Surrey" />
+    <meta
+      property="og:description"
+      content="Premium mobile detailing, valeting, deep cleaning, paint enhancement and ceramic protection for family cars, luxury, performance and supercars."
+    />
+    <meta property="og:image" content="assets/hero/godoy-mobile-detailing-hero.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Godoy Auto Detailing | Premium Mobile Detailing Across London & Surrey" />
+    <meta
+      name="twitter:description"
+      content="Premium mobile detailing, valeting, deep cleaning, paint enhancement and ceramic protection for family cars, luxury, performance and supercars."
+    />
+    <meta name="twitter:image" content="assets/hero/godoy-mobile-detailing-hero.jpeg" />
+    <link rel="icon" href="assets/godoy-auto-detailing-logo-transparent.png" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Godoy Auto Detailing",
+        "image": "assets/hero/godoy-mobile-detailing-hero.jpeg",
+        "description": "Premium mobile car detailing, valeting, deep cleaning, paint enhancement and ceramic protection across London and Surrey.",
+        "telephone": "+447563718790",
+        "priceRange": "££",
+        "areaServed": [
+          { "@type": "City", "name": "London" },
+          { "@type": "AdministrativeArea", "name": "Surrey" }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/godoy.detailing/",
+          "https://share.google/v8OAEAz9z5mlDtGRI"
+        ]
+      }
+    </script>
+    <style>
+      :root {
+        --ink: #101417;
+        --muted: #5c6670;
+        --line: #d8ddd9;
+        --paper: #f7f7f2;
+        --white: #ffffff;
+        --green: #1f5f4b;
+        --green-dark: #153f34;
+        --blue: #0f6fd6;
+        --blue-dark: #0a56ad;
+        --blue-soft: #8ec5ff;
+        --silver: #e8ece8;
+        --shadow: 0 20px 60px rgba(16, 20, 23, 0.14);
+        --radius: 8px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.5;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(16, 20, 23, 0.9);
+        color: var(--white);
+        backdrop-filter: blur(18px);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        max-width: 1180px;
+        min-height: 72px;
+        margin: 0 auto;
+        padding: 0 22px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: max-content;
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+
+      .brand-logo {
+        width: 172px;
+        height: 58px;
+        object-fit: contain;
+      }
+
+      .brand-name {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 14px;
+      }
+
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .icon-link,
+      .icon-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: var(--radius);
+        background: transparent;
+        color: inherit;
+        cursor: pointer;
+      }
+
+      .menu-toggle {
+        display: none;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 46px;
+        padding: 0 18px;
+        border: 1px solid transparent;
+        border-radius: var(--radius);
+        cursor: pointer;
+        font-weight: 800;
+        white-space: nowrap;
+        transition:
+          transform 180ms ease,
+          background-color 180ms ease,
+          border-color 180ms ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+
+      .btn-primary {
+        background: var(--green);
+        color: var(--white);
+      }
+
+      .btn-primary:hover {
+        background: var(--green-dark);
+      }
+
+      .btn-gold {
+        background: var(--blue);
+        color: var(--white);
+      }
+
+      .btn-gold:hover {
+        background: var(--blue-dark);
+      }
+
+      .btn-light {
+        border-color: rgba(255, 255, 255, 0.35);
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--white);
+      }
+
+      .btn-dark {
+        background: var(--ink);
+        color: var(--white);
+      }
+
+      .hero {
+        position: relative;
+        min-height: calc(100svh - 72px);
+        overflow: hidden;
+        background:
+          linear-gradient(90deg, rgba(16, 20, 23, 0.94) 0%, rgba(16, 20, 23, 0.72) 46%, rgba(16, 20, 23, 0.22) 100%),
+          url("assets/hero/godoy-mobile-detailing-hero.jpeg") 58% 58% / cover;
+        color: var(--white);
+      }
+
+      .hero-inner {
+        display: grid;
+        grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.48fr);
+        align-items: center;
+        gap: 52px;
+        max-width: 1180px;
+        min-height: calc(100svh - 72px);
+        margin: 0 auto;
+        padding: 78px 22px 96px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 18px;
+        color: var(--blue-soft);
+        font-size: 13px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .hero h1 {
+        max-width: 780px;
+        margin: 0;
+        font-size: clamp(44px, 7vw, 86px);
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      .hero-copy {
+        max-width: 660px;
+        margin: 22px 0 0;
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 19px;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 32px;
+      }
+
+      .hero-proof {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        max-width: 660px;
+        margin-top: 38px;
+      }
+
+      .proof-item {
+        border-left: 1px solid rgba(255, 255, 255, 0.24);
+        padding-left: 16px;
+      }
+
+      .proof-item strong {
+        display: block;
+        font-size: 24px;
+      }
+
+      .proof-item span {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 13px;
+      }
+
+      .quote-panel {
+        align-self: end;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: var(--radius);
+        background: rgba(247, 247, 242, 0.94);
+        color: var(--ink);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .quote-panel header {
+        padding: 22px;
+        background: var(--ink);
+        color: var(--white);
+      }
+
+      .quote-panel h2 {
+        margin: 0;
+        font-size: 22px;
+        line-height: 1.1;
+      }
+
+      .quote-panel p {
+        margin: 8px 0 0;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 14px;
+      }
+
+      .quote-form {
+        display: grid;
+        gap: 12px;
+        padding: 22px;
+      }
+
+      .privacy-note {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.85rem;
+        line-height: 1.5;
+      }
+
+      .quote-section {
+        background: var(--paper);
+        padding: 44px 22px;
+        scroll-margin-top: 86px;
+      }
+
+      .quote-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 0.82fr) minmax(360px, 1.18fr);
+        align-items: center;
+        gap: 36px;
+        max-width: 1180px;
+        margin: 0 auto;
+      }
+
+      .quote-intro {
+        max-width: 520px;
+      }
+
+      .quote-section .eyebrow {
+        color: var(--blue);
+      }
+
+      .quote-intro h2 {
+        margin: 0;
+        font-size: clamp(34px, 4vw, 54px);
+        line-height: 1;
+      }
+
+      .quote-intro p {
+        margin: 16px 0 0;
+        color: var(--muted);
+        font-size: 17px;
+      }
+
+      .quote-section .quote-panel {
+        align-self: auto;
+        width: 100%;
+      }
+
+      .field {
+        display: grid;
+        gap: 6px;
+      }
+
+      .field span {
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .field input,
+      .field select,
+      .field textarea {
+        width: 100%;
+        min-height: 46px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        color: var(--ink);
+        padding: 11px 12px;
+      }
+
+      .field textarea {
+        min-height: 88px;
+        resize: vertical;
+      }
+
+      .trust-strip {
+        background: var(--white);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .trust-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        max-width: 1180px;
+        margin: 0 auto;
+      }
+
+      .trust {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-height: 92px;
+        padding: 18px 22px;
+        border-right: 1px solid var(--line);
+      }
+
+      .trust:last-child {
+        border-right: 0;
+      }
+
+      .trust i {
+        display: inline-flex;
+        flex: 0 0 auto;
+        color: var(--green);
+      }
+
+      .trust strong {
+        display: block;
+        font-size: 15px;
+      }
+
+      .trust span {
+        display: block;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      section {
+        padding: 88px 22px;
+      }
+
+      .container {
+        max-width: 1180px;
+        margin: 0 auto;
+      }
+
+      .section-head {
+        display: grid;
+        grid-template-columns: minmax(0, 0.85fr) minmax(280px, 0.55fr);
+        gap: 42px;
+        align-items: end;
+        margin-bottom: 38px;
+      }
+
+      .section-kicker {
+        margin: 0 0 10px;
+        color: var(--green);
+        font-size: 13px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .section-head h2 {
+        margin: 0;
+        font-size: clamp(32px, 4vw, 56px);
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .section-head p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 17px;
+      }
+
+      .transformations {
+        background: var(--ink);
+        color: var(--white);
+        padding: 28px 0 20px;
+      }
+
+.transformation-reel {
+  position: relative;
+  height: clamp(420px, 52vw, 620px);
+  min-height: 420px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius);
+  background: #050708;
+        overflow: hidden;
+        box-shadow: 0 28px 70px rgba(0, 0, 0, 0.26);
+      }
+
+      .reel-slide {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  opacity: 0;
+  animation: reelFade 57s infinite;
+  animation-delay: var(--delay, 0s);
+  animation-fill-mode: both;
+}
+
+.reel-shot {
+  position: relative;
+  height: 100%;
+  min-height: 420px;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+      .reel-shot img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  transform: scale(1.04);
+  animation: reelPan 4s ease-in-out infinite;
+}
+
+      .reel-shot:nth-child(2) img {
+        animation-direction: reverse;
+      }
+
+      .reel-label {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        z-index: 2;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        border-radius: 999px;
+        background: rgba(16, 20, 23, 0.76);
+        color: var(--white);
+        padding: 7px 11px;
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+@keyframes reelFade {
+  0%,
+  4.6% {
+    opacity: 1;
+  }
+
+  5.25%,
+  100% {
+    opacity: 0;
+  }
+      }
+
+      @keyframes reelPan {
+        0% {
+          transform: scale(1.04) translateX(-1.5%);
+        }
+
+        50% {
+          transform: scale(1.1) translateX(1.5%);
+        }
+
+        100% {
+          transform: scale(1.04) translateX(-1.5%);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .reel-slide {
+          animation: none;
+          opacity: 0;
+        }
+
+        .reel-slide:first-child {
+          opacity: 1;
+        }
+
+        .reel-shot img {
+          animation: none;
+        }
+      }
+
+      .services {
+        background: var(--paper);
+      }
+
+      .package-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .package {
+        display: grid;
+        align-content: start;
+        min-height: 100%;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        overflow: hidden;
+      }
+
+      .package-media {
+        aspect-ratio: 1.48 / 1;
+        object-fit: cover;
+      }
+
+      .package-body {
+        display: grid;
+        gap: 18px;
+        padding: 24px;
+      }
+
+      .tag {
+        display: inline-flex;
+        width: fit-content;
+        align-items: center;
+        gap: 8px;
+        color: var(--green-dark);
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .package h3 {
+        margin: 0;
+        font-size: 24px;
+        line-height: 1.1;
+      }
+
+      .price {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+      }
+
+      .price strong {
+        font-size: 38px;
+        line-height: 1;
+      }
+
+      .price span {
+        color: var(--muted);
+      }
+
+      .features {
+        display: grid;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .features li {
+        display: grid;
+        grid-template-columns: 18px minmax(0, 1fr);
+        gap: 10px;
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .features i {
+        color: var(--green);
+      }
+
+      .package-included {
+        border: 1px solid rgba(16, 20, 23, 0.1);
+        border-radius: var(--radius);
+        background: var(--paper);
+        overflow: hidden;
+      }
+
+      .package-included summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 13px 14px;
+        color: var(--ink);
+        cursor: pointer;
+        list-style: none;
+        font-size: 13px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .package-included summary::marker {
+        content: "";
+      }
+
+      .package-included summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .package-included summary i {
+        width: 18px;
+        height: 18px;
+        color: var(--green);
+        transition: transform 0.2s ease;
+      }
+
+      .package-included[open] summary i {
+        transform: rotate(180deg);
+      }
+
+      .package-included .features {
+        padding: 0 14px 14px;
+      }
+
+      .package.featured {
+        border-color: rgba(15, 111, 214, 0.55);
+        box-shadow: var(--shadow);
+      }
+
+      .plan-callout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 24px;
+        align-items: center;
+        margin-top: 18px;
+        border: 1px solid rgba(31, 95, 75, 0.28);
+        border-radius: var(--radius);
+        background: var(--white);
+        padding: 24px;
+      }
+
+      .plan-callout h3 {
+        margin: 0;
+        font-size: 26px;
+        line-height: 1.1;
+      }
+
+      .plan-callout p {
+        max-width: 760px;
+        margin: 8px 0 0;
+        color: var(--muted);
+      }
+
+      .dark-band {
+        background: var(--ink);
+        color: var(--white);
+      }
+
+      .dark-band .section-kicker {
+        color: var(--blue-soft);
+      }
+
+      .dark-band .section-head p,
+      .dark-band .features li {
+        color: rgba(255, 255, 255, 0.68);
+      }
+
+      .premium-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.65fr);
+        gap: 28px;
+        align-items: stretch;
+      }
+
+      .showcase {
+        min-height: 560px;
+        border-radius: var(--radius);
+        background:
+          linear-gradient(180deg, rgba(16, 20, 23, 0.02), rgba(16, 20, 23, 0.58)),
+          url("assets/gallery/selected-gallery/godoy-gallery-09.jpg")
+            center / cover;
+        overflow: hidden;
+      }
+
+      .showcase-copy {
+        display: grid;
+        align-content: end;
+        min-height: 560px;
+        padding: 32px;
+      }
+
+      .showcase-copy h3 {
+        max-width: 560px;
+        margin: 0;
+        font-size: clamp(30px, 4vw, 52px);
+        line-height: 1;
+      }
+
+      .showcase-copy p {
+        max-width: 540px;
+        margin: 18px 0 0;
+        color: rgba(255, 255, 255, 0.76);
+      }
+
+      .premium-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .premium-item {
+        display: grid;
+        grid-template-columns: 44px minmax(0, 1fr);
+        gap: 14px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .premium-item i {
+        display: grid;
+        width: 44px;
+        height: 44px;
+        place-items: center;
+        border-radius: 50%;
+        background: rgba(15, 111, 214, 0.18);
+        color: var(--blue-soft);
+      }
+
+      .premium-item h3 {
+        margin: 0;
+        font-size: 18px;
+      }
+
+      .premium-item p {
+        margin: 5px 0 0;
+        color: rgba(255, 255, 255, 0.68);
+      }
+
+      .process {
+        background: var(--white);
+      }
+
+      .step-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1px;
+        background: var(--line);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+
+      .step {
+        min-height: 260px;
+        padding: 26px;
+        background: var(--white);
+      }
+
+      .step span {
+        color: var(--blue);
+        font-weight: 900;
+      }
+
+      .step h3 {
+        margin: 34px 0 10px;
+        font-size: 22px;
+      }
+
+      .step p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .areas {
+        padding-bottom: 52px;
+      }
+
+      .area-layout {
+        display: grid;
+        grid-template-columns: 0.95fr 1.05fr;
+        gap: 48px;
+        align-items: start;
+      }
+
+      .area-map {
+        position: sticky;
+        top: 100px;
+        min-height: 470px;
+        border-radius: var(--radius);
+        background:
+          linear-gradient(180deg, rgba(31, 95, 75, 0.08), rgba(15, 111, 214, 0.11)),
+          url("assets/gallery/selected-gallery/godoy-gallery-22.jpg")
+            center / cover;
+        overflow: hidden;
+      }
+
+      .area-map::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(0deg, rgba(16, 20, 23, 0.78), rgba(16, 20, 23, 0.12));
+      }
+
+      .map-label {
+        position: absolute;
+        right: 24px;
+        bottom: 24px;
+        left: 24px;
+        z-index: 1;
+        color: var(--white);
+      }
+
+      .map-label h2 {
+        margin: 0;
+        font-size: 34px;
+        line-height: 1;
+      }
+
+      .map-label p {
+        margin: 10px 0 0;
+        color: rgba(255, 255, 255, 0.76);
+      }
+
+      .results {
+        padding-top: 52px;
+      }
+
+      .results-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .work-carousel {
+        display: grid;
+        grid-auto-columns: minmax(360px, 560px);
+        grid-auto-flow: column;
+        gap: 18px;
+        margin-top: 30px;
+        overflow-x: auto;
+        padding: 0 0 18px;
+        scroll-snap-type: x mandatory;
+      }
+
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 30px;
+      }
+
+      .portfolio-grid-more {
+        margin-top: 18px;
+      }
+
+      .portfolio-shot {
+        position: relative;
+        aspect-ratio: 1.28 / 1;
+        margin: 0;
+        border-radius: var(--radius);
+        background: var(--ink);
+        overflow: hidden;
+      }
+
+      .portfolio-shot img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 260ms ease, opacity 260ms ease;
+      }
+
+      .portfolio-shot:hover img {
+        opacity: 0.9;
+        transform: scale(1.025);
+      }
+
+      .work-card {
+        scroll-snap-align: start;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        overflow: hidden;
+      }
+
+      .work-main {
+        position: relative;
+        aspect-ratio: 1.42 / 1;
+        background: var(--ink);
+      }
+
+      .work-main img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .work-body {
+        display: grid;
+        gap: 18px;
+        padding: 22px;
+      }
+
+      .work-body h3 {
+        margin: 0;
+        font-size: 26px;
+        line-height: 1.05;
+      }
+
+      .work-body p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .gallery-drawer {
+        display: grid;
+        justify-items: center;
+        margin-top: 18px;
+        border: 0;
+        background: transparent;
+      }
+
+      .gallery-drawer summary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 48px;
+        border: 1px solid var(--ink);
+        border-radius: var(--radius);
+        background: var(--ink);
+        color: var(--white);
+        padding: 0 18px;
+        font-weight: 850;
+        cursor: pointer;
+        list-style: none;
+      }
+
+      .gallery-drawer summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .gallery-drawer .portfolio-grid {
+        width: 100%;
+      }
+
+      .full-gallery {
+        display: grid;
+        gap: 34px;
+        margin-top: 34px;
+      }
+
+      .gallery-case {
+        border-top: 1px solid var(--line);
+        padding-top: 28px;
+      }
+
+      .gallery-case-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 22px;
+        margin-bottom: 18px;
+      }
+
+      .gallery-case-head h3 {
+        margin: 0;
+        font-size: 30px;
+        line-height: 1.05;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .gallery-shot {
+        position: relative;
+        min-height: 280px;
+        border-radius: var(--radius);
+        background: var(--ink);
+        overflow: hidden;
+      }
+
+      .gallery-shot img {
+        height: 100%;
+        min-height: 280px;
+        object-fit: cover;
+        opacity: 0.88;
+      }
+
+      .result {
+        position: relative;
+        min-height: 420px;
+        border-radius: var(--radius);
+        overflow: hidden;
+        background: var(--ink);
+      }
+
+      .result-large {
+        grid-column: span 2;
+      }
+
+      .result img {
+        height: 100%;
+        min-height: 420px;
+        object-fit: cover;
+        opacity: 0.82;
+      }
+
+      .result figcaption {
+        position: absolute;
+        right: 18px;
+        bottom: 18px;
+        left: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        border-radius: var(--radius);
+        background: rgba(16, 20, 23, 0.78);
+        color: var(--white);
+        padding: 16px;
+        backdrop-filter: blur(12px);
+      }
+
+      .result strong,
+      .result span {
+        display: block;
+      }
+
+      .result span {
+        color: rgba(255, 255, 255, 0.68);
+        font-size: 13px;
+      }
+
+      .case-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 18px;
+      }
+
+      .case-meta span {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--white);
+        padding: 8px 12px;
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .reviews {
+        background: var(--white);
+      }
+
+      .review-layout {
+        display: grid;
+        gap: 18px;
+      }
+
+      .google-rating-card {
+        display: grid;
+        grid-template-columns: minmax(240px, auto) minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 22px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--paper);
+        padding: 26px;
+        box-shadow: 0 14px 34px rgba(16, 20, 23, 0.08);
+      }
+
+      .google-rating-top {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .google-mark {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: var(--white);
+        color: #4285f4;
+        font-size: 30px;
+        font-weight: 900;
+        box-shadow: inset 0 0 0 1px rgba(16, 20, 23, 0.08);
+      }
+
+      .google-rating-card strong {
+        display: block;
+        font-size: 42px;
+        line-height: 0.95;
+      }
+
+      .google-rating-card span,
+      .google-rating-card p {
+        color: var(--muted);
+      }
+
+      .google-rating-card p {
+        margin: 0;
+      }
+
+      .review-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .review {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+        padding: 24px;
+        box-shadow: 0 12px 28px rgba(16, 20, 23, 0.07);
+      }
+
+      .review-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+      }
+
+      .review-person {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .review-avatar {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: var(--ink);
+        color: var(--white);
+        font-weight: 900;
+      }
+
+      .review .google-mark {
+        width: 30px;
+        height: 30px;
+        flex: 0 0 auto;
+        font-size: 19px;
+      }
+
+      .review h3 {
+        margin: 0;
+        font-size: 19px;
+        line-height: 1.1;
+      }
+
+      .stars {
+        color: #f5a623;
+        letter-spacing: 0;
+        margin-top: 16px;
+      }
+
+      .review blockquote {
+        margin: 20px 0 16px;
+        color: #263038;
+        font-size: 17px;
+      }
+
+      .review cite {
+        color: var(--muted);
+        font-style: normal;
+      }
+
+      .faq {
+        background: var(--paper);
+      }
+
+      .faq-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      details {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--white);
+      }
+
+      summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 20px 22px;
+        cursor: pointer;
+        font-weight: 850;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      details p {
+        margin: 0;
+        padding: 0 22px 22px;
+        color: var(--muted);
+      }
+
+      .final-cta {
+        background:
+          linear-gradient(90deg, rgba(16, 20, 23, 0.92), rgba(16, 20, 23, 0.55)),
+          url("assets/hero/godoy-mobile-detailing-hero.jpeg")
+            center / cover;
+        color: var(--white);
+      }
+
+      .cta-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 24px;
+        align-items: center;
+      }
+
+      .cta-panel h2 {
+        max-width: 760px;
+        margin: 0;
+        font-size: clamp(34px, 5vw, 64px);
+        line-height: 1;
+      }
+
+      .cta-panel p {
+        max-width: 640px;
+        margin: 18px 0 0;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 18px;
+      }
+
+      .footer {
+        background: var(--ink);
+        color: rgba(255, 255, 255, 0.72);
+        padding: 38px 22px 98px;
+      }
+
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        max-width: 1180px;
+        margin: 0 auto;
+      }
+
+      .footer strong {
+        color: var(--white);
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .footer-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: var(--radius);
+        padding: 0 12px;
+        color: var(--white);
+        font-weight: 800;
+      }
+
+      .mobile-bar {
+        position: fixed;
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        z-index: 30;
+        display: none;
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: var(--radius);
+        background: rgba(16, 20, 23, 0.92);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(16px);
+      }
+
+      .mobile-bar .btn {
+        flex: 1;
+        min-width: 0;
+        padding: 0 12px;
+      }
+
+      @media (max-width: 980px) {
+        .nav-links {
+          position: fixed;
+          top: 72px;
+          right: 0;
+          left: 0;
+          display: none;
+          flex-direction: column;
+          align-items: stretch;
+          border-top: 1px solid rgba(255, 255, 255, 0.12);
+          background: rgba(16, 20, 23, 0.98);
+          padding: 18px 22px;
+        }
+
+        .nav-links.is-open {
+          display: flex;
+        }
+
+        .menu-toggle {
+          display: inline-flex;
+        }
+
+        .hero-inner,
+        .section-head,
+        .premium-grid,
+        .review-layout,
+        .area-layout,
+        .quote-layout,
+        .cta-panel,
+        .plan-callout {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-inner {
+          min-height: auto;
+          padding-top: 62px;
+        }
+
+        .quote-panel {
+          align-self: auto;
+          max-width: 560px;
+        }
+
+        .quote-section .quote-panel {
+          max-width: none;
+        }
+
+        .package-grid,
+        .review-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .google-rating-card {
+          grid-template-columns: 1fr;
+          justify-items: start;
+        }
+
+        .results-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .portfolio-grid,
+        .gallery-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .trust-grid,
+        .step-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .area-map {
+          position: relative;
+          top: auto;
+        }
+      }
+
+      @media (max-width: 680px) {
+        .nav {
+          min-height: 66px;
+          padding-inline: 14px;
+        }
+
+        .brand-logo {
+          width: 132px;
+          height: 48px;
+        }
+
+        .nav-actions .btn {
+          display: none;
+        }
+
+        .hero {
+          min-height: auto;
+          background-position: 61% 58%;
+        }
+
+        .hero-inner {
+          padding: 54px 16px 60px;
+        }
+
+        .hero h1 {
+          font-size: 44px;
+        }
+
+        .hero-copy {
+          font-size: 17px;
+        }
+
+        .hero-proof,
+        .trust-grid,
+        .step-grid,
+        .results-grid,
+        .portfolio-grid,
+        .gallery-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .result-large {
+          grid-column: span 1;
+        }
+
+        .work-carousel {
+          grid-auto-columns: minmax(280px, 88vw);
+        }
+
+        .compare-shot,
+        .compare-shot img {
+          min-height: 260px;
+        }
+
+    .transformation-reel {
+      height: 380px;
+      min-height: 380px;
+    }
+
+    .reel-shot,
+    .reel-shot img {
+      min-height: 380px;
+    }
+
+        .reel-caption {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .reel-caption p {
+          max-width: 100%;
+        }
+
+        .transformation-body {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .gallery-case-head {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .trust {
+          min-height: auto;
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+
+        section {
+          padding: 64px 16px;
+        }
+
+        .showcase,
+        .showcase-copy,
+        .area-map,
+        .result,
+        .result img {
+          min-height: 390px;
+        }
+
+        .package-body,
+        .step,
+        .premium-item,
+        .review {
+          padding: 20px;
+        }
+
+        .result figcaption {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .footer-inner {
+          flex-direction: column;
+        }
+
+        .mobile-bar {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Godoy Auto Detailing home">
+          <img
+            class="brand-logo"
+            src="assets/godoy-auto-detailing-logo-transparent.png"
+            alt="Godoy Auto Detailing logo"
+          />
+          <span class="brand-name">Godoy Auto Detailing</span>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="#top">Home</a>
+          <a href="#services">Services</a>
+          <a href="#results">Gallery</a>
+          <a href="#reviews">Review</a>
+          <a href="#quote">Contact Us</a>
+        </div>
+        <div class="nav-actions">
+          <a class="icon-link" href="tel:+447563718790" aria-label="Call Godoy Auto Detailing">
+            <i data-lucide="phone"></i>
+          </a>
+          <a class="btn btn-gold" href="#quote">
+            <i data-lucide="message-circle"></i>
+            Get Quote
+          </a>
+          <button class="icon-button menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div>
+            <p class="eyebrow"><i data-lucide="sparkles"></i> London & Surrey mobile detailing</p>
+            <h1 id="hero-title">Premium Mobile Detailing Across London & Surrey</h1>
+            <p class="hero-copy">
+              Premium mobile detailing for every kind of vehicle, from family cars and daily drivers to luxury,
+              performance and supercars. We bring a sharper, cleaner finish to your home, workplace or private residence.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-gold" href="#quote">
+                <i data-lucide="message-circle"></i>
+                Get a WhatsApp Quote
+              </a>
+              <a class="btn btn-light" href="#services">
+                <i data-lucide="layers-3"></i>
+                View Services
+              </a>
+            </div>
+            <div class="hero-proof" aria-label="Key service highlights">
+              <div class="proof-item">
+                <strong>At Your Door</strong>
+                <span>Home, work or private residence</span>
+              </div>
+              <div class="proof-item">
+                <strong>Clear Prices</strong>
+                <span>Accessible packages from £70</span>
+              </div>
+              <div class="proof-item">
+                <strong>Every Vehicle</strong>
+                <span>Family, luxury, performance and supercars</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="transformations" id="transformations" aria-label="Vehicle transformation reel">
+        <div class="container">
+          <div class="transformation-reel" aria-label="Before and after transformation reel">
+            <article class="reel-slide" style="--delay: 0s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-01.jpeg" alt="Transformation before photo 01" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-02.jpeg" alt="Transformation after photo 02" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 3s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-03.jpeg" alt="Transformation before photo 03" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-04.jpeg" alt="Transformation after photo 04" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 6s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-05.jpeg" alt="Transformation before photo 05" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-06.jpeg" alt="Transformation after photo 06" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 9s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-07.jpeg" alt="Transformation before photo 07" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-08.jpeg" alt="Transformation after photo 08" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 12s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-09.jpeg" alt="Transformation before photo 09" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-10.jpeg" alt="Transformation after photo 10" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 15s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-11.jpeg" alt="Transformation before photo 11" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-12.jpeg" alt="Transformation after photo 12" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 18s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-13.jpeg" alt="Transformation before photo 13" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-14.jpeg" alt="Transformation after photo 14" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 21s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-15.jpeg" alt="Transformation before photo 15" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-16.jpeg" alt="Transformation after photo 16" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 24s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-17.jpeg" alt="Transformation before photo 17" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-18.jpeg" alt="Transformation after photo 18" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 27s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-19.jpeg" alt="Transformation before photo 19" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-20.jpeg" alt="Transformation after photo 20" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 30s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-21.jpeg" alt="Transformation before photo 21" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-22.jpeg" alt="Transformation after photo 22" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 33s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-23.jpeg" alt="Transformation before photo 23" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-24.jpeg" alt="Transformation after photo 24" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 36s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-25.jpeg" alt="Transformation before photo 25" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-26.jpeg" alt="Transformation after photo 26" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 39s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-27.jpeg" alt="Transformation before photo 27" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-28.jpeg" alt="Transformation after photo 28" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 42s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-29.jpeg" alt="Transformation before photo 29" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-30.jpeg" alt="Transformation after photo 30" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 45s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-31.jpeg" alt="Transformation before photo 31" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-32.jpeg" alt="Transformation after photo 32" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 48s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-33.jpeg" alt="Transformation before photo 33" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-34.jpeg" alt="Transformation after photo 34" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 51s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-35.jpeg" alt="Transformation before photo 35" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-36.jpeg" alt="Transformation after photo 36" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          <article class="reel-slide" style="--delay: 54s;">
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-37.jpeg" alt="Transformation before photo 37" loading="lazy" />
+                  <span>Before</span>
+                </div>
+                <div class="reel-shot">
+                  <img src="assets/transformation-reel/transformation-reel-38.jpeg" alt="Transformation after photo 38" loading="lazy" />
+                  <span>After</span>
+                </div>
+              </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Services</p>
+              <h2>Choose the right level of care for your car.</h2>
+            </div>
+            <p>
+              From accessible maintenance valets to gloss enhancement, ceramic coating and correction work. Every quote
+              is based on your vehicle, condition and location.
+            </p>
+          </div>
+
+          <div class="package-grid">
+            <article class="package">
+              <img
+                class="package-media"
+                src="assets/gallery/bmw-330e-full-deep-clean/bmw-330e-full-deep-clean-06.jpg"
+                alt="BMW 330e after maintenance valet"
+              />
+              <div class="package-body">
+                <span class="tag"><i data-lucide="clock-3"></i> Regular upkeep</span>
+                <h3>Maintenance Valet</h3>
+                <div class="price"><strong>£70.00</strong><span>from</span></div>
+                <details class="package-included">
+                  <summary><span>What's Included</span><i data-lucide="chevron-down"></i></summary>
+                  <ul class="features">
+                    <li><i data-lucide="check"></i><span>Regular Care Package</span></li>
+                    <li><i data-lucide="check"></i><span>Snow foam & citrus pre-wash</span></li>
+                    <li><i data-lucide="check"></i><span>Wheels & tyres cleaned</span></li>
+                    <li><i data-lucide="check"></i><span>Safe hand wash (two bucket method)</span></li>
+                    <li><i data-lucide="check"></i><span>Wax or ceramic spray sealant</span></li>
+                    <li><i data-lucide="check"></i><span>Vehicle dried with air blower & towels</span></li>
+                    <li><i data-lucide="check"></i><span>Tyres dressed (satin finish)</span></li>
+                    <li><i data-lucide="check"></i><span>Interior vacuum, dashboard & trims wiped</span></li>
+                    <li><i data-lucide="check"></i><span>Windows cleaned & air freshener</span></li>
+                  </ul>
+                </details>
+                <a class="btn btn-dark" href="#quote">Request Slot</a>
+              </div>
+            </article>
+
+            <article class="package">
+              <img
+                class="package-media"
+                src="assets/gallery/mini-countryman-raynes-park/mini-countryman-raynes-park-05.jpg"
+                alt="Mini Cooper Countryman interior after deep clean"
+              />
+              <div class="package-body">
+                <span class="tag"><i data-lucide="armchair"></i> Interior focused</span>
+                <h3>Interior Deep Clean</h3>
+                <div class="price"><strong>£90.00</strong><span>from</span></div>
+                <details class="package-included">
+                  <summary><span>What's Included</span><i data-lucide="chevron-down"></i></summary>
+                  <ul class="features">
+                    <li><i data-lucide="check"></i><span>Full Interior Restoration</span></li>
+                    <li><i data-lucide="check"></i><span>Boot steamed, vacuumed & deodorised</span></li>
+                    <li><i data-lucide="check"></i><span>Pet hair removal (extra if excessive)</span></li>
+                    <li><i data-lucide="check"></i><span>Cloth seats steam cleaned & extracted</span></li>
+                    <li><i data-lucide="check"></i><span>Leather & alcantara cleaned & restored</span></li>
+                    <li><i data-lucide="check"></i><span>Carpets & floor mats steamed</span></li>
+                    <li><i data-lucide="check"></i><span>Dashboard, trims & steering wheel cleaned</span></li>
+                    <li><i data-lucide="check"></i><span>Door cards & centre console detailed</span></li>
+                    <li><i data-lucide="check"></i><span>Air vents detailed with compressed air</span></li>
+                    <li><i data-lucide="check"></i><span>Glass cleaned & air freshener</span></li>
+                  </ul>
+                </details>
+                <a class="btn btn-dark" href="#quote">Clean Interior</a>
+              </div>
+            </article>
+
+            <article class="package featured">
+              <img
+                class="package-media"
+                src="assets/gallery/range-rover-velar-raynes-park/range-rover-velar-raynes-park-05.jpg"
+                alt="Range Rover Velar after full deep clean"
+              />
+              <div class="package-body">
+                <span class="tag"><i data-lucide="star"></i> Most requested</span>
+                <h3>Full Deep Clean</h3>
+                <div class="price"><strong>£140.00</strong><span>from</span></div>
+                <details class="package-included">
+                  <summary><span>What's Included</span><i data-lucide="chevron-down"></i></summary>
+                  <ul class="features">
+                    <li><i data-lucide="check"></i><span>Complete Vehicle Reset</span></li>
+                    <li><i data-lucide="check"></i><span>Full interior deep clean</span></li>
+                    <li><i data-lucide="check"></i><span>Seats & carpets extraction</span></li>
+                    <li><i data-lucide="check"></i><span>Air vents & crevices detailed</span></li>
+                    <li><i data-lucide="check"></i><span>Glass cleaned inside</span></li>
+                    <li><i data-lucide="check"></i><span>Wheels & arches detailed</span></li>
+                    <li><i data-lucide="check"></i><span>Snow foam pre-wash and safe hand wash</span></li>
+                    <li><i data-lucide="check"></i><span>Badges & door shuts detailed</span></li>
+                    <li><i data-lucide="check"></i><span>Tar, fallout and exterior decontamination</span></li>
+                    <li><i data-lucide="check"></i><span>Ceramic spray sealant</span></li>
+                    <li><i data-lucide="check"></i><span>Tyres dressed & gloss finish</span></li>
+                  </ul>
+                </details>
+                <a class="btn btn-primary" href="#quote">Get Quote</a>
+              </div>
+            </article>
+
+            <article class="package">
+              <img
+                class="package-media"
+                src="assets/gallery/porsche-macan-s-enhancement/porsche-macan-s-enhancement-07.jpg"
+                alt="Porsche Macan S after enhancement detail"
+              />
+              <div class="package-body">
+                <span class="tag"><i data-lucide="sparkle"></i> Gloss upgrade</span>
+                <h3>Enhancement Detail</h3>
+                <div class="price"><strong>£350.00</strong><span>from</span></div>
+                <details class="package-included">
+                  <summary><span>What's Included</span><i data-lucide="chevron-down"></i></summary>
+                  <ul class="features">
+                    <li><i data-lucide="check"></i><span>Paint Correction & Gloss</span></li>
+                    <li><i data-lucide="check"></i><span>Wheels & tyres deep cleaned</span></li>
+                    <li><i data-lucide="check"></i><span>Snow foam & citrus pre-wash</span></li>
+                    <li><i data-lucide="check"></i><span>Two bucket safe wash</span></li>
+                    <li><i data-lucide="check"></i><span>Tar, iron & water spot removal</span></li>
+                    <li><i data-lucide="check"></i><span>Clay bar decontamination</span></li>
+                    <li><i data-lucide="check"></i><span>Engine bay detailed & dressed</span></li>
+                    <li><i data-lucide="check"></i><span>Safe drying with air blower & towels</span></li>
+                    <li><i data-lucide="check"></i><span>Single-stage machine polish</span></li>
+                    <li><i data-lucide="check"></i><span>Swirl & light scratch reduction</span></li>
+                    <li><i data-lucide="check"></i><span>Deep gloss & colour enhancement</span></li>
+                    <li><i data-lucide="check"></i><span>Ceramic / sealant protection (12 months)</span></li>
+                    <li><i data-lucide="check"></i><span>Wheels dressed</span></li>
+                    <li><i data-lucide="check"></i><span>24-36 month coating upgrade available</span></li>
+                  </ul>
+                </details>
+                <a class="btn btn-dark" href="#quote">Improve Gloss</a>
+              </div>
+            </article>
+
+            <article class="package">
+              <img
+                class="package-media"
+                src="assets/gallery/ford-raptor-ceramic-coating/ford-raptor-ceramic-coating-02.jpg"
+                alt="Ford Raptor after ceramic coating"
+              />
+              <div class="package-body">
+                <span class="tag"><i data-lucide="shield"></i> After preparation</span>
+                <h3>Ceramic Coating</h3>
+                <div class="price"><strong>£250.00</strong><span>from</span></div>
+                <details class="package-included">
+                  <summary><span>What's Included</span><i data-lucide="chevron-down"></i></summary>
+                  <ul class="features">
+                    <li><i data-lucide="check"></i><span>Extra Protection After Enhancement</span></li>
+                    <li><i data-lucide="check"></i><span>Paint ceramic coating - from £250</span></li>
+                    <li><i data-lucide="check"></i><span>Glass coating - from £60</span></li>
+                    <li><i data-lucide="check"></i><span>Wheel coating - from £100</span></li>
+                    <li><i data-lucide="check"></i><span>Leather protection - from £60</span></li>
+                    <li><i data-lucide="check"></i><span>Enhances gloss & durability</span></li>
+                    <li><i data-lucide="check"></i><span>Hydrophobic & UV protection</span></li>
+                    <li><i data-lucide="check"></i><span>Easier maintenance</span></li>
+                    <li><i data-lucide="check"></i><span>Available after Enhancement Detail</span></li>
+                  </ul>
+                </details>
+                <a class="btn btn-dark" href="#quote">Ask About Coating</a>
+              </div>
+            </article>
+
+            <article class="package">
+              <img
+                class="package-media"
+                src="assets/gallery/paint-correction/porsche-paint-correction-cover.jpg"
+                alt="Porsche paint correction finish inside detailing workshop"
+              />
+              <div class="package-body">
+                <span class="tag"><i data-lucide="orbit"></i> Quoted service</span>
+                <h3>Paint Correction</h3>
+                <div class="price"><strong>Quote</strong><span>after inspection</span></div>
+                <details class="package-included">
+                  <summary><span>What's Included</span><i data-lucide="chevron-down"></i></summary>
+                  <ul class="features">
+                    <li><i data-lucide="check"></i><span>Contact us to consult a multiple-stage paint correction</span></li>
+                    <li><i data-lucide="check"></i><span>Paint condition assessment before confirming correction level</span></li>
+                    <li><i data-lucide="check"></i><span>Bespoke correction plan for deeper swirls, oxidation, haze and paint defects</span></li>
+                    <li><i data-lucide="check"></i><span>Recommended before higher-end ceramic coating</span></li>
+                    <li><i data-lucide="check"></i><span>Best for owners seeking a sharper, glossier finish</span></li>
+                  </ul>
+                </details>
+                <a class="btn btn-dark" href="#quote">Request Assessment</a>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="plan-callout">
+            <div>
+              <span class="tag"><i data-lucide="repeat-2"></i> Regular clients</span>
+              <h3>Monthly Maintenance Plan</h3>
+              <p>
+                Available after a Full Deep Clean. Designed for clients who want priority scheduling and a consistently
+                clean car without needing another full reset every month.
+              </p>
+            </div>
+            <a class="btn btn-primary" href="#quote">Ask About The Plan</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="results" id="results">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Gallery</p>
+              <h2>Recent work, kept visual and easy to scan.</h2>
+            </div>
+            <p>
+              A clean selection of finished details and premium vehicles. More transformations live on Instagram.
+            </p>
+            <a
+              class="btn btn-primary"
+              href="https://www.instagram.com/godoy.detailing/"
+              target="_blank"
+              rel="noreferrer"
+              style="margin-top: 18px"
+            >
+              <i data-lucide="camera"></i>
+              View Instagram
+            </a>
+          </div>
+
+          <div class="portfolio-grid" aria-label="Featured detailing gallery">
+            <figure class="portfolio-shot">
+              <img src="assets/gallery/selected-gallery/godoy-gallery-25.jpg?v=2" alt="Porsche Macan front exterior detail" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="portfolio-shot">
+              <img src="assets/gallery/selected-gallery/godoy-gallery-26.jpg?v=2" alt="Porsche Macan rear exterior finish" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="portfolio-shot">
+              <img src="assets/gallery/selected-gallery/godoy-gallery-27.jpg?v=2" alt="Porsche steering wheel and cabin detail" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="portfolio-shot">
+              <img src="assets/gallery/selected-gallery/godoy-gallery-31.jpg?v=2" alt="Black Range Rover Velar front exterior after detail" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="portfolio-shot">
+              <img src="assets/gallery/selected-gallery/godoy-gallery-32.jpg?v=2" alt="Black Range Rover Velar cabin detail" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="portfolio-shot">
+              <img src="assets/gallery/selected-gallery/godoy-gallery-33.jpg?v=2" alt="Black Range Rover Velar rear exterior finish" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="portfolio-shot">
+              <img src="assets/gallery/selected-gallery/godoy-gallery-28.jpg?v=2" alt="Mini Cooper exterior after detail" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="portfolio-shot">
+              <img src="assets/gallery/selected-gallery/godoy-gallery-29.jpg?v=2" alt="Mini Cooper interior deep clean" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="portfolio-shot">
+              <img src="assets/gallery/selected-gallery/godoy-gallery-30.jpg?v=2" alt="Mini Cooper rear exterior finish" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="portfolio-shot">
+              <img src="assets/gallery/selected-gallery/godoy-gallery-04.jpg?v=2" alt="Red Range Rover Velar exterior detail" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="portfolio-shot">
+              <img src="assets/gallery/selected-gallery/godoy-gallery-05.jpg?v=2" alt="Red Range Rover Velar front exterior finish" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="portfolio-shot">
+              <img src="assets/gallery/selected-gallery/godoy-gallery-06.jpg?v=2" alt="Red Range Rover Velar interior deep clean" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+
+          <details class="gallery-drawer" id="all-work-gallery">
+            <summary>
+              <i data-lucide="images"></i>
+              Load More
+            </summary>
+
+            <div class="portfolio-grid portfolio-grid-more" aria-label="More detailing gallery images">
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-01.jpg?v=2" alt="Tesla exterior after mobile detailing" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-02.jpg?v=2" alt="Tesla during snow foam wash" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-03.jpg?v=2" alt="Tesla glossy exterior finish" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-07.jpg?v=2" alt="Porsche exterior with Godoy Auto Detailing van" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-09.jpg?v=2" alt="Porsche ceramic coating finish" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-12.jpg?v=2" alt="Porsche exterior after detailing" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-17.jpg?v=2" alt="Ford Raptor front side detail" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-14.jpg?v=2" alt="Ford Raptor front exterior after detailing" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-15.jpg?v=2" alt="Ford Raptor interior detail" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-19.jpg?v=2" alt="Blue BMW exterior after mobile detailing" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-20.jpg?v=2" alt="Blue BMW interior rear seats after cleaning" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-21.jpg?v=2" alt="Blue BMW during snow foam wash" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-22.jpg?v=2" alt="White Range Rover exterior detail" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-23.jpg?v=2" alt="White Range Rover front cabin detail" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-24.jpg?v=2" alt="White Range Rover rear seats after interior clean" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-34.jpg?v=2" alt="White hatchback exterior after detailing" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-35.jpg?v=2" alt="White hatchback interior after deep clean" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="portfolio-shot">
+                <img src="assets/gallery/selected-gallery/godoy-gallery-36.jpg?v=2" alt="White hatchback rear exterior finish" loading="lazy" decoding="async" />
+              </figure>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Client Confidence</p>
+              <h2>Words from customers who booked the service.</h2>
+            </div>
+            <p>
+              Selected comments from the public Google profile, with a direct link for clients who want to read more
+              before booking.
+            </p>
+            <a
+              class="btn btn-primary"
+              href="https://share.google/v8OAEAz9z5mlDtGRI"
+              target="_blank"
+              rel="noreferrer"
+              style="margin-top: 18px"
+            >
+              <i data-lucide="star"></i>
+              Read Google Reviews
+            </a>
+          </div>
+          <div class="review-layout">
+            <aside class="google-rating-card" aria-label="Google review rating summary">
+              <div>
+                <div class="google-rating-top">
+                  <span class="google-mark" aria-hidden="true">G</span>
+                  <div>
+                    <strong>5.0</strong>
+                    <span>Google rating</span>
+                  </div>
+                </div>
+                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              </div>
+              <p>Real client feedback from mobile detailing, deep clean, enhancement and protection bookings.</p>
+              <a class="btn btn-dark" href="https://share.google/v8OAEAz9z5mlDtGRI" target="_blank" rel="noreferrer">
+                <i data-lucide="external-link"></i>
+                View On Google
+              </a>
+            </aside>
+
+            <div class="review-grid">
+              <article class="review">
+                <div class="review-head">
+                  <div class="review-person">
+                    <span class="review-avatar" aria-hidden="true">R</span>
+                    <div>
+                      <h3>Rafael Paranaiba</h3>
+                      <cite>Google review</cite>
+                    </div>
+                  </div>
+                  <span class="google-mark" aria-hidden="true">G</span>
+                </div>
+                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>
+                  Excellent service from Godoy Auto Detailing. They came to my house to remove serious mould from inside
+                  my car and the result was incredible.
+                </blockquote>
+              </article>
+              <article class="review">
+                <div class="review-head">
+                  <div class="review-person">
+                    <span class="review-avatar" aria-hidden="true">J</span>
+                    <div>
+                      <h3>Junior Cardozo</h3>
+                      <cite>Google review</cite>
+                    </div>
+                  </div>
+                  <span class="google-mark" aria-hidden="true">G</span>
+                </div>
+                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>
+                  Had my Porsche Macan S fully detailed and the results were outstanding. Deep gloss, no swirl marks and
+                  the interior was spotless too.
+                </blockquote>
+              </article>
+              <article class="review">
+                <div class="review-head">
+                  <div class="review-person">
+                    <span class="review-avatar" aria-hidden="true">B</span>
+                    <div>
+                      <h3>Bruno Constantino</h3>
+                      <cite>Google review</cite>
+                    </div>
+                  </div>
+                  <span class="google-mark" aria-hidden="true">G</span>
+                </div>
+                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>Magnificent work. All the brilliant details. I highly recommend it.</blockquote>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Why Choose Us</p>
+              <h2>Premium results without a complicated booking process.</h2>
+            </div>
+            <p>
+              A focused mobile service for owners who want the car treated properly, quoted clearly and finished with
+              care at their address.
+            </p>
+          </div>
+          <div class="step-grid">
+            <article class="step">
+              <span>01</span>
+              <h3>Premium mobile setup</h3>
+              <p>We arrive equipped with water, power, products and safe methods for your chosen service.</p>
+            </article>
+            <article class="step">
+              <span>02</span>
+              <h3>Clear recommendation</h3>
+              <p>Send the car, location and photos. We recommend the right package before you book.</p>
+            </article>
+            <article class="step">
+              <span>03</span>
+              <h3>Portfolio standard</h3>
+              <p>Clients can judge the finish from recent vehicles before making contact.</p>
+            </article>
+            <article class="step">
+              <span>04</span>
+              <h3>Aftercare mindset</h3>
+              <p>We help you keep the finish cleaner for longer, with maintenance options for regular clients.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="areas" id="areas">
+        <div class="container area-layout">
+          <div class="area-map">
+            <div class="map-label">
+              <h2>London & Surrey</h2>
+              <p>Mobile detailing across London, Surrey and selected surrounding areas.</p>
+            </div>
+          </div>
+          <div>
+            <div class="section-head" style="display: block; margin-bottom: 28px">
+              <p class="section-kicker">Service Areas</p>
+              <h2>Mobile detailing across London and Surrey.</h2>
+              <p style="margin-top: 16px">
+                We aim to cover as much of London and Surrey as possible. Send us your postcode on WhatsApp and we will
+                confirm availability for your area.
+              </p>
+            </div>
+            <div class="plan-callout">
+              <div>
+                <span class="tag"><i data-lucide="map-pin"></i> Check your area</span>
+                <h3>Send your postcode before deciding.</h3>
+                <p>
+                  We do not want to turn away good work just because your area is not shown on the page. Message us and
+                  we will confirm if we can come to you.
+                </p>
+              </div>
+              <a class="btn btn-primary" href="#quote">Check My Area</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">FAQ</p>
+              <h2>Before you book.</h2>
+            </div>
+            <p>
+              Quick answers about access, weather, parking and timing, so the booking feels clear from the start.
+            </p>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary>Do you bring water and power? <i data-lucide="plus"></i></summary>
+              <p>
+                Yes, the mobile setup is designed to be self-contained. If a safe outdoor tap or mains power is
+                available, it can be used, but the service does not depend on it for most packages.
+              </p>
+            </details>
+            <details>
+              <summary>What happens if it rains? <i data-lucide="plus"></i></summary>
+              <p>
+                Light rain is usually manageable, especially for interior work and maintenance valets. Heavy rain or
+                weather that would compromise the result can be rearranged.
+              </p>
+            </details>
+            <details>
+              <summary>Can you work in apartments or underground parking? <i data-lucide="plus"></i></summary>
+              <p>
+                In many cases, yes. The key requirements are safe access, permission to work, enough space around the
+                vehicle and parking for the mobile setup nearby.
+              </p>
+            </details>
+            <details>
+              <summary>How long does a detail take? <i data-lucide="plus"></i></summary>
+              <p>
+                Maintenance valets can be completed faster, while full details, paint enhancement and ceramic coatings
+                take longer. The quote will include an estimated time window.
+              </p>
+            </details>
+            <details>
+              <summary>Do you only work on prestige cars? <i data-lucide="plus"></i></summary>
+              <p>
+                No. We work on everyday cars, family cars, work vehicles, new cars and prestige vehicles. The standard
+                is careful professional car care, whatever you drive.
+              </p>
+            </details>
+            <details>
+              <summary>Do you offer ceramic coating and paint correction? <i data-lucide="plus"></i></summary>
+              <p>
+                Yes. Ceramic coating starts from £250.00 and is available after an enhancement detail or paint
+                correction, because the paint needs proper preparation first. Paint correction is quoted after assessment.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote-section" id="quote" aria-labelledby="quote-title">
+        <div class="quote-layout">
+          <div class="quote-intro">
+            <p class="eyebrow"><i data-lucide="message-circle"></i> Request your quote</p>
+            <h2>Send your car details and preferred area.</h2>
+            <p>
+              Tell us what you drive, where you are and what level of care you want. We will recommend the right
+              package and confirm availability before you book.
+            </p>
+          </div>
+          <aside class="quote-panel" aria-labelledby="quote-title">
+            <header>
+              <h2 id="quote-title">Get a tailored quote</h2>
+              <p>Vehicle, service, location and any notes. The form opens WhatsApp with your details ready to send.</p>
+            </header>
+            <form class="quote-form" id="quoteForm">
+              <label class="field">
+                <span>Vehicle</span>
+                <input name="vehicle" placeholder="VW Golf, Tesla Model 3, Range Rover..." required />
+              </label>
+              <label class="field">
+                <span>Service</span>
+                <select name="service" required>
+                  <option value="">Choose a service</option>
+                  <option>Maintenance Valet - from £70.00</option>
+                  <option>Interior Deep Clean - from £90.00</option>
+                  <option>Full Deep Clean - from £140.00</option>
+                  <option>Enhancement Detail - from £350.00</option>
+                  <option>Ceramic Coating - from £250.00</option>
+                  <option>Paint Correction</option>
+                  <option>Monthly Maintenance Plan</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Location</span>
+                <input name="location" placeholder="Chelsea, Cobham, Weybridge..." required />
+              </label>
+              <label class="field">
+                <span>Notes</span>
+                <textarea name="notes" placeholder="Interior condition, pet hair, swirls, parking access..."></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit">
+                <i data-lucide="send"></i>
+                Send via WhatsApp
+              </button>
+              <p class="privacy-note">
+                No online payment is taken through this form. Your details are only used to reply with availability and a quote.
+              </p>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <strong>Godoy Auto Detailing</strong>
+          <p>Mobile valeting, detailing and protection for everyday, family, prestige and performance cars across London & Surrey.</p>
+        </div>
+        <div>
+          <strong>Call or WhatsApp</strong>
+          <p><a href="tel:+447563718790">07563 718 790</a></p>
+          <div class="footer-links">
+            <a class="footer-link" href="https://wa.me/447563718790" target="_blank" rel="noreferrer">
+              <i data-lucide="message-circle"></i>
+              WhatsApp
+            </a>
+            <a
+              class="footer-link"
+              href="https://www.instagram.com/godoy.detailing/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i data-lucide="camera"></i>
+              Instagram
+            </a>
+            <a
+              class="footer-link"
+              href="https://share.google/v8OAEAz9z5mlDtGRI"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i data-lucide="star"></i>
+              Google Reviews
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobile-bar" aria-label="Mobile quick actions">
+      <a class="btn btn-gold" href="#quote"><i data-lucide="message-circle"></i> Quote</a>
+      <a class="btn btn-light" href="tel:+447563718790"><i data-lucide="phone"></i> Call</a>
+    </div>
+
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+    <script>
+      const quotePhone = "447563718790";
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector("#navLinks");
+      const quoteForm = document.querySelector("#quoteForm");
+      const galleryDrawer = document.querySelector("#all-work-gallery");
+
+      if (galleryDrawer && window.location.hash !== "#all-work-gallery") {
+        galleryDrawer.open = false;
+      }
+
+      function refreshIcons() {
+        if (window.lucide) {
+          window.lucide.createIcons({ strokeWidth: 1.8 });
+        }
+      }
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("is-open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      navLinks.addEventListener("click", () => {
+        navLinks.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+
+      document.querySelectorAll("[data-open-gallery]").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (galleryDrawer) {
+            galleryDrawer.open = true;
+          }
+        });
+      });
+
+      quoteForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const formData = new FormData(quoteForm);
+        const message = [
+          "Hi Godoy Auto Detailing, I would like a quote.",
+          "",
+          `Vehicle: ${formData.get("vehicle")}`,
+          `Service: ${formData.get("service")}`,
+          `Location: ${formData.get("location")}`,
+          `Notes: ${formData.get("notes") || "No extra notes yet."}`,
+        ].join("\n");
+        window.location.href = `https://wa.me/${quotePhone}?text=${encodeURIComponent(message)}`;
+      });
+
+      refreshIcons();
+    </script>
+  </body>
+</html>
