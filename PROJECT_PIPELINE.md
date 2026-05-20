@@ -474,22 +474,26 @@ For every meaningful project change:
 4. Sync the latest project files to `/Users/vitor/Documents/Godoy-Auto-Detailing-Website`.
 ### 2026-05-20 18:55 BST - GitHub repository setup
 
-Status: In progress.
+Status: Completed.
 
 Request:
 - Connect the local website project to the GitHub repository supplied by the client.
 
 Summary:
 - Prepared the project for version control with a baseline `.gitignore`.
-- Prepared the local project to connect with `https://github.com/Vitorgodoyy/Godoy-auto-detailing-website.git`.
-- Started the first website snapshot for deployment.
+- Connected the local project to `https://github.com/Vitorgodoyy/Godoy-auto-detailing-website.git`.
+- Created the first deployment snapshot in Git.
+- Pushed the `main` branch to GitHub.
+- Synced the same project files to the local backup folder.
 
 Files changed:
 - `.gitignore`
 - `PROJECT_PIPELINE.md`
 
 Verification:
-- Confirmed the project folder was not previously a Git repository.
+- Created initial commit `ca50f23`.
+- Pushed `main` to the GitHub repository.
+- Synced backup folder: `/Users/vitor/Documents/Godoy-Auto-Detailing-Website`.
 
 Notes:
-- Next step is creating the first commit, pushing to GitHub, and then connecting hosting for the live site.
+- Next step is connecting the GitHub repository to a hosting provider and pointing the IONOS domain DNS to that host.
