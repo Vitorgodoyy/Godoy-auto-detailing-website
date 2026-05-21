@@ -497,3 +497,27 @@ Verification:
 
 Notes:
 - Next step is connecting the GitHub repository to a hosting provider and pointing the IONOS domain DNS to that host.
+
+### 2026-05-21 14:40 BST - Vercel cache headers for live media
+
+Status: Completed.
+
+Request:
+- Investigate why the Vercel deployment still appeared without images and without the transformation reel after redeploy.
+
+Summary:
+- Confirmed Vercel is serving the same HTML as the local project.
+- Confirmed the direct hero and transformation reel asset URLs return `200`.
+- Added Vercel cache-control headers so HTML and image assets must revalidate after deploy.
+- This targets stale browser or edge cache while keeping local `file://` preview compatible.
+
+Files changed:
+- `vercel.json`
+- `PROJECT_PIPELINE.md`
+
+Verification:
+- Compared deployed HTML hash against local `index.html`.
+- Checked direct Vercel asset URLs for the hero image and transformation reel image.
+
+Notes:
+- After the next deployment, open the live site with a cache-busting query string or hard refresh if the browser still shows an old version.
