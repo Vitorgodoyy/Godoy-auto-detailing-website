@@ -48,19 +48,20 @@
     </script>
     <style>
       :root {
-        --ink: #101417;
-        --muted: #5c6670;
-        --line: #d8ddd9;
-        --paper: #f7f7f2;
+        --ink: #0d0f11;
+        --ink-soft: #1b1f22;
+        --muted: #656e76;
+        --line: #e3ded2;
+        --paper: #f6f3ec;
         --white: #ffffff;
-        --green: #1f5f4b;
-        --green-dark: #153f34;
-        --blue: #0f6fd6;
-        --blue-dark: #0a56ad;
-        --blue-soft: #8ec5ff;
-        --silver: #e8ece8;
-        --shadow: 0 20px 60px rgba(16, 20, 23, 0.14);
-        --radius: 8px;
+        --gold: #b6893f;
+        --gold-dark: #8a6428;
+        --steel: #33414c;
+        --steel-dark: #212b33;
+        --steel-soft: #b7c3cb;
+        --silver: #ece9e1;
+        --shadow: 0 24px 60px rgba(13, 15, 17, 0.16);
+        --radius: 6px;
       }
 
       * {
@@ -103,7 +104,7 @@
         top: 0;
         z-index: 20;
         border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-        background: rgba(16, 20, 23, 0.9);
+        background: rgba(13, 15, 17, 0.9);
         color: var(--white);
         backdrop-filter: blur(18px);
       }
@@ -198,21 +199,21 @@
       }
 
       .btn-primary {
-        background: var(--green);
+        background: var(--steel);
         color: var(--white);
       }
 
       .btn-primary:hover {
-        background: var(--green-dark);
+        background: var(--steel-dark);
       }
 
       .btn-gold {
-        background: var(--blue);
+        background: var(--gold);
         color: var(--white);
       }
 
       .btn-gold:hover {
-        background: var(--blue-dark);
+        background: var(--gold-dark);
       }
 
       .btn-light {
@@ -231,7 +232,7 @@
         min-height: calc(100svh - 72px);
         overflow: hidden;
         background:
-          linear-gradient(90deg, rgba(16, 20, 23, 0.82) 0%, rgba(16, 20, 23, 0.56) 48%, rgba(16, 20, 23, 0.18) 100%),
+          linear-gradient(90deg, rgba(13, 15, 17, 0.82) 0%, rgba(13, 15, 17, 0.56) 48%, rgba(13, 15, 17, 0.18) 100%),
           url("assets/hero/godoy-mobile-detailing-hero.jpeg?v=5") 58% 58% / cover;
         color: var(--white);
       }
@@ -252,7 +253,7 @@
         align-items: center;
         gap: 8px;
         margin: 0 0 18px;
-        color: var(--blue-soft);
+        color: var(--steel-soft);
         font-size: 13px;
         font-weight: 800;
         text-transform: uppercase;
@@ -287,7 +288,7 @@
         gap: 10px;
         border: 1px solid rgba(255, 255, 255, 0.24);
         border-radius: var(--radius);
-        background: rgba(16, 20, 23, 0.48);
+        background: rgba(13, 15, 17, 0.48);
         color: var(--white);
         padding: 8px 12px;
         font-size: 13px;
@@ -446,7 +447,7 @@
         line-height: 1.1;
       }
 
-      .quote-panel p {
+      .quote-panel header p {
         margin: 8px 0 0;
         color: rgba(255, 255, 255, 0.72);
         font-size: 14px;
@@ -485,7 +486,7 @@
       }
 
       .quote-section .eyebrow {
-        color: var(--blue);
+        color: var(--steel);
       }
 
       .quote-intro h2 {
@@ -562,7 +563,7 @@
       .trust i {
         display: inline-flex;
         flex: 0 0 auto;
-        color: var(--green);
+        color: var(--gold);
       }
 
       .trust strong {
@@ -595,7 +596,7 @@
 
       .section-kicker {
         margin: 0 0 10px;
-        color: var(--green);
+        color: var(--gold);
         font-size: 13px;
         font-weight: 900;
         text-transform: uppercase;
@@ -626,7 +627,7 @@
         min-height: 500px;
         border: 1px solid rgba(255, 255, 255, 0.16);
         border-radius: var(--radius);
-        background: #050708;
+        background: #1b1f22;
         overflow: hidden;
         box-shadow: 0 28px 70px rgba(0, 0, 0, 0.26);
       }
@@ -636,7 +637,7 @@
         inset: 0;
         display: grid;
         grid-template-columns: 1fr;
-        background: #050708;
+        background: #1b1f22;
         opacity: 0;
         animation: reelFade 42s infinite;
         animation-delay: var(--delay, 0s);
@@ -757,7 +758,7 @@
         width: fit-content;
         align-items: center;
         gap: 8px;
-        color: var(--green-dark);
+        color: var(--gold-dark);
         font-size: 12px;
         font-weight: 900;
         text-transform: uppercase;
@@ -808,11 +809,11 @@
       }
 
       .features i {
-        color: var(--green);
+        color: var(--gold);
       }
 
       .package-included {
-        border: 1px solid rgba(16, 20, 23, 0.1);
+        border: 1px solid rgba(13, 15, 17, 0.1);
         border-radius: var(--radius);
         background: var(--paper);
         overflow: hidden;
@@ -843,7 +844,7 @@
       .package-included summary i {
         width: 18px;
         height: 18px;
-        color: var(--green);
+        color: var(--gold);
         transition: transform 0.2s ease;
       }
 
@@ -861,7 +862,7 @@
       }
 
       .package.specialist {
-        border-color: rgba(31, 95, 75, 0.42);
+        border-color: rgba(182, 137, 63, 0.42);
       }
 
       .plan-callout {
@@ -870,7 +871,7 @@
         gap: 24px;
         align-items: center;
         margin-top: 18px;
-        border: 1px solid rgba(31, 95, 75, 0.28);
+        border: 1px solid rgba(182, 137, 63, 0.28);
         border-radius: var(--radius);
         background: var(--white);
         padding: 24px;
@@ -894,7 +895,7 @@
       }
 
       .dark-band .section-kicker {
-        color: var(--blue-soft);
+        color: var(--steel-soft);
       }
 
       .dark-band .section-head p,
@@ -913,7 +914,7 @@
         min-height: 560px;
         border-radius: var(--radius);
         background:
-          linear-gradient(180deg, rgba(16, 20, 23, 0.02), rgba(16, 20, 23, 0.58)),
+          linear-gradient(180deg, rgba(13, 15, 17, 0.02), rgba(13, 15, 17, 0.58)),
           url("assets/gallery/selected-gallery/godoy-gallery-11.jpg?v=4")
             center / cover;
         overflow: hidden;
@@ -961,7 +962,7 @@
         place-items: center;
         border-radius: 50%;
         background: rgba(15, 111, 214, 0.18);
-        color: var(--blue-soft);
+        color: var(--steel-soft);
       }
 
       .premium-item h3 {
@@ -995,7 +996,7 @@
       }
 
       .step span {
-        color: var(--blue);
+        color: var(--steel);
         font-weight: 900;
       }
 
@@ -1026,7 +1027,7 @@
         min-height: 470px;
         border-radius: var(--radius);
         background:
-          linear-gradient(180deg, rgba(31, 95, 75, 0.08), rgba(15, 111, 214, 0.11)),
+          linear-gradient(180deg, rgba(182, 137, 63, 0.08), rgba(15, 111, 214, 0.11)),
           url("https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1500&q=82")
             center / cover;
         overflow: hidden;
@@ -1036,7 +1037,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(0deg, rgba(16, 20, 23, 0.78), rgba(16, 20, 23, 0.12));
+        background: linear-gradient(0deg, rgba(13, 15, 17, 0.78), rgba(13, 15, 17, 0.12));
       }
 
       .map-label {
@@ -1256,7 +1257,7 @@
         justify-content: space-between;
         gap: 16px;
         border-radius: var(--radius);
-        background: rgba(16, 20, 23, 0.78);
+        background: rgba(13, 15, 17, 0.78);
         color: var(--white);
         padding: 16px;
         backdrop-filter: blur(12px);
@@ -1307,7 +1308,7 @@
         border-radius: var(--radius);
         background: var(--paper);
         padding: 26px;
-        box-shadow: 0 14px 34px rgba(16, 20, 23, 0.08);
+        box-shadow: 0 14px 34px rgba(13, 15, 17, 0.08);
       }
 
       .google-rating-top {
@@ -1327,7 +1328,7 @@
         color: #4285f4;
         font-size: 30px;
         font-weight: 900;
-        box-shadow: inset 0 0 0 1px rgba(16, 20, 23, 0.08);
+        box-shadow: inset 0 0 0 1px rgba(13, 15, 17, 0.08);
       }
 
       .google-rating-card strong {
@@ -1356,7 +1357,7 @@
         border-radius: var(--radius);
         background: var(--white);
         padding: 24px;
-        box-shadow: 0 12px 28px rgba(16, 20, 23, 0.07);
+        box-shadow: 0 12px 28px rgba(13, 15, 17, 0.07);
       }
 
       .review-head {
@@ -1405,7 +1406,7 @@
 
       .review blockquote {
         margin: 20px 0 16px;
-        color: #263038;
+        color: #1b1f22;
         font-size: 16px;
         line-height: 1.55;
       }
@@ -1458,7 +1459,7 @@
 
       .final-cta {
         background:
-          linear-gradient(90deg, rgba(16, 20, 23, 0.92), rgba(16, 20, 23, 0.55)),
+          linear-gradient(90deg, rgba(13, 15, 17, 0.92), rgba(13, 15, 17, 0.55)),
           url("assets/hero/godoy-mobile-detailing-hero.jpeg?v=5")
             center / cover;
         color: var(--white);
@@ -1554,7 +1555,7 @@
         padding: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
         border-radius: var(--radius);
-        background: rgba(16, 20, 23, 0.92);
+        background: rgba(13, 15, 17, 0.92);
         box-shadow: var(--shadow);
         backdrop-filter: blur(16px);
       }
@@ -1575,7 +1576,7 @@
           flex-direction: column;
           align-items: stretch;
           border-top: 1px solid rgba(255, 255, 255, 0.12);
-          background: rgba(16, 20, 23, 0.98);
+          background: rgba(13, 15, 17, 0.98);
           padding: 18px 22px;
         }
 

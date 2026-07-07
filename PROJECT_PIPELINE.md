@@ -521,3 +521,32 @@ Verification:
 
 Notes:
 - After the next deployment, open the live site with a cache-busting query string or hard refresh if the browser still shows an old version.
+
+### 2026-07-07 22:15 BST - Full visual redesign (palette, tokens, buttons)
+
+Status: Completed.
+
+Request:
+- Full visual "repagination" of the site, direction left to Claude's judgement. Two untracked assets (`assets/reel-pairs/porsche-silver-*.jpeg`, `assets/reel-premium/`) explicitly excluded from this pass.
+
+Summary:
+- Replaced the green/blue color system with a premium ink + brass-gold + steel palette: `--ink`, `--ink-soft`, `--muted`, `--line`, `--paper`, `--gold`, `--gold-dark`, `--steel`, `--steel-dark`, `--steel-soft`, `--silver`.
+- Warmed the paper background and hairline color, deepened the near-black ink tone, tightened `--radius` from 8px to 6px, and strengthened the base shadow.
+- Fixed a class/color naming mismatch: `.btn-gold` (used for the primary "Get Quote" CTAs in the header, hero and mobile sticky bar) previously rendered blue/steel instead of gold. Swapped `.btn-primary` and `.btn-gold` color assignments so the highest-priority CTAs are now the gold accent, and in-page section CTAs use the dark steel tone.
+- Fixed a pre-existing legibility bug found during visual QA: `.quote-panel p` (white text, meant for the dark header strip) was unscoped and also applied to `.privacy-note` inside the light-background form area, making the payment disclaimer nearly invisible. Scoped the rule to `.quote-panel header p`.
+- Left Google's brand blue (`#4285f4`) and the star rating amber (`#f5a623`) unchanged as they are brand/semantic colors, not part of the site's theme system.
+- Added `.claude/launch.json` (gitignored) for local static preview during redesign QA.
+
+Files changed:
+- `index.html`
+- `.gitignore`
+- `PROJECT_PIPELINE.md`
+
+Verification:
+- Ran a local static preview and visually checked hero, services, SONAX, reviews, transformation reel, FAQ, quote form, footer and the mobile sticky action bar at both mobile (375px) and wide viewports.
+- Confirmed no leftover references to the old `--green`/`--blue` tokens or hardcoded old hex/rgba values remain.
+- Confirmed the quote form privacy note is legible after the scoping fix.
+
+Notes:
+- Logo asset (`assets/godoy-auto-detailing-logo-transparent.png`) is a raster PNG with a blue accent stroke; left as-is since recoloring a brand logo asset was out of scope for a CSS-driven redesign.
+- The two untracked Porsche-silver reel photos and `assets/reel-premium/` folder remain uncommitted, as requested.
