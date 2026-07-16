@@ -1,2640 +1,627 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Godoy Auto Detailing | Premium Mobile Detailing in London & Surrey</title>
-    <meta
-      name="description"
-      content="Premium mobile detailing, valeting, deep cleaning, paint enhancement and ceramic protection for family cars, luxury, performance and supercars across London and Surrey."
-    />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Godoy Auto Detailing" />
-    <meta name="theme-color" content="#101417" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Godoy Auto Detailing | Premium Mobile Detailing Across London & Surrey" />
-    <meta
-      property="og:description"
-      content="Premium mobile detailing, valeting, deep cleaning, paint enhancement and ceramic protection for family cars, luxury, performance and supercars."
-    />
-    <meta property="og:image" content="assets/hero/godoy-mobile-detailing-hero.jpeg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Godoy Auto Detailing | Premium Mobile Detailing Across London & Surrey" />
-    <meta
-      name="twitter:description"
-      content="Premium mobile detailing, valeting, deep cleaning, paint enhancement and ceramic protection for family cars, luxury, performance and supercars."
-    />
-    <meta name="twitter:image" content="assets/hero/godoy-mobile-detailing-hero.jpeg" />
-    <link rel="icon" href="assets/godoy-auto-detailing-logo-transparent.png" />
-    <link rel="preconnect" href="https://unpkg.com" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Godoy Auto Detailing",
-        "image": "assets/hero/godoy-mobile-detailing-hero.jpeg",
-        "description": "Premium mobile car detailing, valeting, deep cleaning, paint enhancement and ceramic protection across London and Surrey.",
-        "telephone": "+447563718790",
-        "priceRange": "££",
-        "areaServed": [
-          { "@type": "City", "name": "London" },
-          { "@type": "AdministrativeArea", "name": "Surrey" }
-        ],
-        "sameAs": [
-          "https://www.instagram.com/godoy.detailing/",
-          "https://share.google/v8OAEAz9z5mlDtGRI"
-        ]
-      }
-    </script>
-    <style>
-      :root {
-        --ink: #0d0f11;
-        --ink-soft: #1b1f22;
-        --muted: #656e76;
-        --line: #e3ded2;
-        --paper: #f6f3ec;
-        --white: #ffffff;
-        --gold: #b6893f;
-        --gold-dark: #8a6428;
-        --steel: #33414c;
-        --steel-dark: #212b33;
-        --steel-soft: #b7c3cb;
-        --silver: #ece9e1;
-        --shadow: 0 24px 60px rgba(13, 15, 17, 0.16);
-        --radius: 6px;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        margin: 0;
-        color: var(--ink);
-        background: var(--paper);
-        font-family:
-          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          sans-serif;
-        line-height: 1.5;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      img {
-        display: block;
-        width: 100%;
-      }
-
-      button,
-      input,
-      select,
-      textarea {
-        font: inherit;
-      }
-
-      .site-header {
-        position: sticky;
-        top: 0;
-        z-index: 20;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-        background: rgba(13, 15, 17, 0.9);
-        color: var(--white);
-        backdrop-filter: blur(18px);
-      }
-
-      .nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 24px;
-        max-width: 1180px;
-        min-height: 72px;
-        margin: 0 auto;
-        padding: 0 22px;
-      }
-
-      .brand {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        min-width: max-content;
-        font-weight: 800;
-        letter-spacing: 0;
-      }
-
-      .brand-logo {
-        width: 172px;
-        height: 58px;
-        object-fit: contain;
-      }
-
-      .brand-name {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-      }
-
-      .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 22px;
-        color: rgba(255, 255, 255, 0.82);
-        font-size: 14px;
-      }
-
-      .nav-actions {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .icon-link,
-      .icon-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        border: 1px solid rgba(255, 255, 255, 0.22);
-        border-radius: var(--radius);
-        background: transparent;
-        color: inherit;
-        cursor: pointer;
-      }
-
-      .menu-toggle {
-        display: none;
-      }
-
-      .btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        min-height: 46px;
-        padding: 0 18px;
-        border: 1px solid transparent;
-        border-radius: var(--radius);
-        cursor: pointer;
-        font-weight: 800;
-        white-space: nowrap;
-        transition:
-          transform 180ms ease,
-          background-color 180ms ease,
-          border-color 180ms ease;
-      }
-
-      .btn:hover {
-        transform: translateY(-1px);
-      }
-
-      .btn-primary {
-        background: var(--steel);
-        color: var(--white);
-      }
-
-      .btn-primary:hover {
-        background: var(--steel-dark);
-      }
-
-      .btn-gold {
-        background: var(--gold);
-        color: var(--white);
-      }
-
-      .btn-gold:hover {
-        background: var(--gold-dark);
-      }
-
-      .btn-light {
-        border-color: rgba(255, 255, 255, 0.35);
-        background: rgba(255, 255, 255, 0.1);
-        color: var(--white);
-      }
-
-      .btn-dark {
-        background: var(--ink);
-        color: var(--white);
-      }
-
-      .hero {
-        position: relative;
-        min-height: calc(100svh - 72px);
-        overflow: hidden;
-        background:
-          linear-gradient(90deg, rgba(13, 15, 17, 0.82) 0%, rgba(13, 15, 17, 0.56) 48%, rgba(13, 15, 17, 0.18) 100%),
-          url("assets/hero/godoy-mobile-detailing-hero.jpeg?v=5") 58% 58% / cover;
-        color: var(--white);
-      }
-
-      .hero-inner {
-        display: grid;
-        grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.48fr);
-        align-items: center;
-        gap: 52px;
-        max-width: 1180px;
-        min-height: calc(100svh - 72px);
-        margin: 0 auto;
-        padding: 78px 22px 96px;
-      }
-
-      .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        margin: 0 0 18px;
-        color: var(--steel-soft);
-        font-size: 13px;
-        font-weight: 800;
-        text-transform: uppercase;
-      }
-
-      .hero h1 {
-        max-width: 780px;
-        margin: 0;
-        font-size: clamp(44px, 7vw, 86px);
-        line-height: 0.95;
-        letter-spacing: 0;
-      }
-
-      .hero-copy {
-        max-width: 660px;
-        margin: 22px 0 0;
-        color: rgba(255, 255, 255, 0.86);
-        font-size: 19px;
-      }
-
-      .hero-credentials {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 22px;
-      }
-
-      .credential-pill {
-        display: inline-flex;
-        min-height: 44px;
-        align-items: center;
-        gap: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.24);
-        border-radius: var(--radius);
-        background: rgba(13, 15, 17, 0.48);
-        color: var(--white);
-        padding: 8px 12px;
-        font-size: 13px;
-        font-weight: 900;
-        text-transform: uppercase;
-      }
-
-      .credential-pill img {
-        width: 86px;
-        max-height: 24px;
-        object-fit: contain;
-      }
-
-      .hero-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 32px;
-      }
-
-      .hero-proof {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 16px;
-        max-width: 660px;
-        margin-top: 38px;
-      }
-
-      .proof-item {
-        border-left: 1px solid rgba(255, 255, 255, 0.24);
-        padding-left: 16px;
-      }
-
-      .proof-item strong {
-        display: block;
-        font-size: 24px;
-      }
-
-      .proof-item span {
-        color: rgba(255, 255, 255, 0.7);
-        font-size: 13px;
-      }
-
-      .sonax-section {
-        background: var(--white);
-        border-top: 1px solid var(--line);
-        border-bottom: 1px solid var(--line);
-      }
-
-      .sonax-panel {
-        display: grid;
-        grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.7fr);
-        gap: 34px;
-        align-items: center;
-      }
-
-      .sonax-copy {
-        display: grid;
-        gap: 18px;
-      }
-
-      .sonax-copy h2 {
-        max-width: 760px;
-        margin: 0;
-        font-size: clamp(36px, 4.8vw, 64px);
-        line-height: 0.96;
-      }
-
-      .sonax-copy p {
-        max-width: 690px;
-        margin: 0;
-        color: var(--muted);
-        font-size: 17px;
-      }
-
-      .sonax-proof-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 12px;
-        margin-top: 10px;
-      }
-
-      .sonax-proof {
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        background: var(--paper);
-        padding: 16px;
-      }
-
-      .sonax-proof strong {
-        display: block;
-        font-size: 15px;
-      }
-
-      .sonax-proof span {
-        display: block;
-        margin-top: 6px;
-        color: var(--muted);
-        font-size: 13px;
-      }
-
-      .sonax-card {
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        background: var(--paper);
-        overflow: hidden;
-        box-shadow: var(--shadow);
-      }
-
-      .sonax-card > img {
-        width: 100%;
-        aspect-ratio: 1 / 1;
-        background: var(--white);
-        object-fit: contain;
-        object-position: center top;
-      }
-
-      .sonax-card-body {
-        display: grid;
-        gap: 8px;
-        padding: 18px;
-      }
-
-      .sonax-logo-line {
-        width: 180px;
-        max-width: 60%;
-        height: auto;
-        object-fit: contain;
-      }
-
-      .sonax-card-body p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 14px;
-      }
-
-      .quote-panel {
-        align-self: end;
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        border-radius: var(--radius);
-        background: rgba(247, 247, 242, 0.94);
-        color: var(--ink);
-        box-shadow: var(--shadow);
-        overflow: hidden;
-      }
-
-      .quote-panel header {
-        padding: 22px;
-        background: var(--ink);
-        color: var(--white);
-      }
-
-      .quote-panel h2 {
-        margin: 0;
-        font-size: 22px;
-        line-height: 1.1;
-      }
-
-      .quote-panel header p {
-        margin: 8px 0 0;
-        color: rgba(255, 255, 255, 0.72);
-        font-size: 14px;
-      }
-
-      .quote-form {
-        display: grid;
-        gap: 12px;
-        padding: 22px;
-      }
-
-      .privacy-note {
-        margin: 0;
-        color: var(--muted);
-        font-size: 0.85rem;
-        line-height: 1.5;
-      }
-
-      .quote-section {
-        background: var(--paper);
-        padding: 44px 22px;
-        scroll-margin-top: 86px;
-      }
-
-      .quote-layout {
-        display: grid;
-        grid-template-columns: minmax(0, 0.82fr) minmax(360px, 1.18fr);
-        align-items: center;
-        gap: 36px;
-        max-width: 1180px;
-        margin: 0 auto;
-      }
-
-      .quote-intro {
-        max-width: 520px;
-      }
-
-      .quote-section .eyebrow {
-        color: var(--steel);
-      }
-
-      .quote-intro h2 {
-        margin: 0;
-        font-size: clamp(34px, 4vw, 54px);
-        line-height: 1;
-      }
-
-      .quote-intro p {
-        margin: 16px 0 0;
-        color: var(--muted);
-        font-size: 17px;
-      }
-
-      .quote-section .quote-panel {
-        align-self: auto;
-        width: 100%;
-      }
-
-      .field {
-        display: grid;
-        gap: 6px;
-      }
-
-      .field span {
-        color: var(--muted);
-        font-size: 12px;
-        font-weight: 800;
-        text-transform: uppercase;
-      }
-
-      .field input,
-      .field select,
-      .field textarea {
-        width: 100%;
-        min-height: 46px;
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        background: var(--white);
-        color: var(--ink);
-        padding: 11px 12px;
-      }
-
-      .field textarea {
-        min-height: 88px;
-        resize: vertical;
-      }
-
-      .trust-strip {
-        background: var(--white);
-        border-bottom: 1px solid var(--line);
-      }
-
-      .trust-grid {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        max-width: 1180px;
-        margin: 0 auto;
-      }
-
-      .trust {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        min-height: 92px;
-        padding: 18px 22px;
-        border-right: 1px solid var(--line);
-      }
-
-      .trust:last-child {
-        border-right: 0;
-      }
-
-      .trust i {
-        display: inline-flex;
-        flex: 0 0 auto;
-        color: var(--gold);
-      }
-
-      .trust strong {
-        display: block;
-        font-size: 15px;
-      }
-
-      .trust span {
-        display: block;
-        color: var(--muted);
-        font-size: 13px;
-      }
-
-      section {
-        padding: 88px 22px;
-      }
-
-      .container {
-        max-width: 1180px;
-        margin: 0 auto;
-      }
-
-      .section-head {
-        display: grid;
-        grid-template-columns: minmax(0, 0.85fr) minmax(280px, 0.55fr);
-        gap: 42px;
-        align-items: end;
-        margin-bottom: 38px;
-      }
-
-      .section-kicker {
-        margin: 0 0 10px;
-        color: var(--gold);
-        font-size: 13px;
-        font-weight: 900;
-        text-transform: uppercase;
-      }
-
-      .section-head h2 {
-        margin: 0;
-        font-size: clamp(32px, 4vw, 56px);
-        line-height: 1;
-        letter-spacing: 0;
-      }
-
-      .section-head p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 17px;
-      }
-
-      .transformations {
-        background: var(--ink);
-        color: var(--white);
-        padding: 34px 22px;
-      }
-
-      .transformation-reel {
-        position: relative;
-        height: clamp(500px, 54vw, 720px);
-        min-height: 500px;
-        border: 1px solid rgba(255, 255, 255, 0.16);
-        border-radius: var(--radius);
-        background: #1b1f22;
-        overflow: hidden;
-        box-shadow: 0 28px 70px rgba(0, 0, 0, 0.26);
-      }
-
-      .reel-slide {
-        position: absolute;
-        inset: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        background: #1b1f22;
-        opacity: 0;
-        animation: reelFade 42s infinite;
-        animation-delay: var(--delay, 0s);
-      }
-
-      .reel-slide.is-split {
-        grid-template-columns: 1fr 1fr;
-        gap: 1px;
-        background: rgba(255, 255, 255, 0.12);
-      }
-
-      .reel-slide::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        z-index: 2;
-        background:
-          linear-gradient(90deg, rgba(5, 7, 8, 0.16), transparent 18%, transparent 82%, rgba(5, 7, 8, 0.14)),
-          linear-gradient(180deg, rgba(5, 7, 8, 0.08), transparent 28%, transparent 74%, rgba(5, 7, 8, 0.12));
-        pointer-events: none;
-      }
-
-      .reel-shot {
-        position: relative;
-        height: 100%;
-        min-height: 500px;
-        overflow: hidden;
-        background: var(--ink);
-      }
-
-      .reel-shot img {
-        width: 100%;
-        height: 100%;
-        min-height: 500px;
-        object-fit: cover;
-        transform: scale(1.03);
-        animation: reelPan 8s ease-in-out infinite;
-      }
-
-      .reel-shot:nth-child(2) img {
-        animation-direction: reverse;
-      }
-
-      @keyframes reelFade {
-        0%,
-        15.4% {
-          opacity: 1;
-        }
-
-        17%,
-        100% {
-          opacity: 0;
-        }
-      }
-
-      @keyframes reelPan {
-        0% {
-          transform: scale(1.03) translateX(-1%);
-        }
-
-        50% {
-          transform: scale(1.08) translateX(1%);
-        }
-
-        100% {
-          transform: scale(1.03) translateX(-1%);
-        }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        .reel-slide {
-          animation: none;
-          opacity: 0;
-        }
-
-        .reel-slide:first-child {
-          opacity: 1;
-        }
-
-        .reel-shot img {
-          animation: none;
-        }
-      }
-
-      .services {
-        background: var(--paper);
-      }
-
-      .package-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 18px;
-      }
-
-      .package {
-        display: grid;
-        align-content: start;
-        min-height: 100%;
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        background: var(--white);
-        overflow: hidden;
-      }
-
-      .package-media {
-        aspect-ratio: 1.48 / 1;
-        object-fit: cover;
-      }
-
-      .package-body {
-        display: grid;
-        gap: 18px;
-        padding: 24px;
-      }
-
-      .tag {
-        display: inline-flex;
-        width: fit-content;
-        align-items: center;
-        gap: 8px;
-        color: var(--gold-dark);
-        font-size: 12px;
-        font-weight: 900;
-        text-transform: uppercase;
-      }
-
-      .package h3 {
-        margin: 0;
-        font-size: 24px;
-        line-height: 1.1;
-      }
-
-      .price {
-        display: flex;
-        align-items: baseline;
-        gap: 8px;
-      }
-
-      .price strong {
-        font-size: 38px;
-        line-height: 1;
-      }
-
-      .price span {
-        color: var(--muted);
-      }
-
-      .price-note {
-        margin: -10px 0 0;
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.45;
-      }
-
-      .features {
-        display: grid;
-        gap: 10px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .features li {
-        display: grid;
-        grid-template-columns: 18px minmax(0, 1fr);
-        gap: 10px;
-        color: var(--muted);
-        font-size: 15px;
-      }
-
-      .features i {
-        color: var(--gold);
-      }
-
-      .package-included {
-        border: 1px solid rgba(13, 15, 17, 0.1);
-        border-radius: var(--radius);
-        background: var(--paper);
-        overflow: hidden;
-      }
-
-      .package-included summary {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        padding: 13px 14px;
-        color: var(--ink);
-        cursor: pointer;
-        list-style: none;
-        font-size: 13px;
-        font-weight: 900;
-        text-transform: uppercase;
-      }
-
-      .package-included summary::marker {
-        content: "";
-      }
-
-      .package-included summary::-webkit-details-marker {
-        display: none;
-      }
-
-      .package-included summary i {
-        width: 18px;
-        height: 18px;
-        color: var(--gold);
-        transition: transform 0.2s ease;
-      }
-
-      .package-included[open] summary i {
-        transform: rotate(180deg);
-      }
-
-      .package-included .features {
-        padding: 0 14px 14px;
-      }
-
-      .package.featured {
-        border-color: rgba(15, 111, 214, 0.55);
-        box-shadow: var(--shadow);
-      }
-
-      .package.specialist {
-        border-color: rgba(182, 137, 63, 0.42);
-      }
-
-      .plan-callout {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) auto;
-        gap: 24px;
-        align-items: center;
-        margin-top: 18px;
-        border: 1px solid rgba(182, 137, 63, 0.28);
-        border-radius: var(--radius);
-        background: var(--white);
-        padding: 24px;
-      }
-
-      .plan-callout h3 {
-        margin: 0;
-        font-size: 26px;
-        line-height: 1.1;
-      }
-
-      .plan-callout p {
-        max-width: 760px;
-        margin: 8px 0 0;
-        color: var(--muted);
-      }
-
-      .dark-band {
-        background: var(--ink);
-        color: var(--white);
-      }
-
-      .dark-band .section-kicker {
-        color: var(--steel-soft);
-      }
-
-      .dark-band .section-head p,
-      .dark-band .features li {
-        color: rgba(255, 255, 255, 0.68);
-      }
-
-      .premium-grid {
-        display: grid;
-        grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.65fr);
-        gap: 28px;
-        align-items: stretch;
-      }
-
-      .showcase {
-        min-height: 560px;
-        border-radius: var(--radius);
-        background:
-          linear-gradient(180deg, rgba(13, 15, 17, 0.02), rgba(13, 15, 17, 0.58)),
-          url("assets/gallery/selected-gallery/godoy-gallery-11.jpg?v=4")
-            center / cover;
-        overflow: hidden;
-      }
-
-      .showcase-copy {
-        display: grid;
-        align-content: end;
-        min-height: 560px;
-        padding: 32px;
-      }
-
-      .showcase-copy h3 {
-        max-width: 560px;
-        margin: 0;
-        font-size: clamp(30px, 4vw, 52px);
-        line-height: 1;
-      }
-
-      .showcase-copy p {
-        max-width: 540px;
-        margin: 18px 0 0;
-        color: rgba(255, 255, 255, 0.76);
-      }
-
-      .premium-list {
-        display: grid;
-        gap: 12px;
-      }
-
-      .premium-item {
-        display: grid;
-        grid-template-columns: 44px minmax(0, 1fr);
-        gap: 14px;
-        padding: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.14);
-        border-radius: var(--radius);
-        background: rgba(255, 255, 255, 0.05);
-      }
-
-      .premium-item i {
-        display: grid;
-        width: 44px;
-        height: 44px;
-        place-items: center;
-        border-radius: 50%;
-        background: rgba(15, 111, 214, 0.18);
-        color: var(--steel-soft);
-      }
-
-      .premium-item h3 {
-        margin: 0;
-        font-size: 18px;
-      }
-
-      .premium-item p {
-        margin: 5px 0 0;
-        color: rgba(255, 255, 255, 0.68);
-      }
-
-      .process {
-        background: var(--white);
-      }
-
-      .step-grid {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 1px;
-        background: var(--line);
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        overflow: hidden;
-      }
-
-      .step {
-        min-height: 260px;
-        padding: 26px;
-        background: var(--white);
-      }
-
-      .step span {
-        color: var(--steel);
-        font-weight: 900;
-      }
-
-      .step h3 {
-        margin: 34px 0 10px;
-        font-size: 22px;
-      }
-
-      .step p {
-        margin: 0;
-        color: var(--muted);
-      }
-
-      .areas {
-        padding-bottom: 52px;
-      }
-
-      .area-layout {
-        display: grid;
-        grid-template-columns: 0.95fr 1.05fr;
-        gap: 48px;
-        align-items: start;
-      }
-
-      .area-map {
-        position: sticky;
-        top: 100px;
-        min-height: 470px;
-        border-radius: var(--radius);
-        background:
-          linear-gradient(180deg, rgba(182, 137, 63, 0.08), rgba(15, 111, 214, 0.11)),
-          url("https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1500&q=82")
-            center / cover;
-        overflow: hidden;
-      }
-
-      .area-map::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(0deg, rgba(13, 15, 17, 0.78), rgba(13, 15, 17, 0.12));
-      }
-
-      .map-label {
-        position: absolute;
-        right: 24px;
-        bottom: 24px;
-        left: 24px;
-        z-index: 1;
-        color: var(--white);
-      }
-
-      .map-label h2 {
-        margin: 0;
-        font-size: 34px;
-        line-height: 1;
-      }
-
-      .map-label p {
-        margin: 10px 0 0;
-        color: rgba(255, 255, 255, 0.76);
-      }
-
-      .results {
-        padding-top: 52px;
-      }
-
-      .results-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 18px;
-      }
-
-      .work-carousel {
-        display: grid;
-        grid-auto-columns: minmax(360px, 560px);
-        grid-auto-flow: column;
-        gap: 18px;
-        margin-top: 30px;
-        overflow-x: auto;
-        padding: 0 0 18px;
-        scroll-snap-type: x mandatory;
-      }
-
-      .portfolio-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 12px;
-        margin-top: 30px;
-      }
-
-      .portfolio-grid-more {
-        margin-top: 18px;
-      }
-
-      .portfolio-shot {
-        position: relative;
-        aspect-ratio: 1.28 / 1;
-        margin: 0;
-        border-radius: var(--radius);
-        background: var(--ink);
-        overflow: hidden;
-      }
-
-      .portfolio-shot img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 260ms ease, opacity 260ms ease;
-      }
-
-      .portfolio-shot:hover img {
-        opacity: 0.9;
-        transform: scale(1.025);
-      }
-
-      .work-card {
-        scroll-snap-align: start;
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        background: var(--white);
-        overflow: hidden;
-      }
-
-      .work-main {
-        position: relative;
-        aspect-ratio: 1.42 / 1;
-        background: var(--ink);
-      }
-
-      .work-main img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .work-body {
-        display: grid;
-        gap: 18px;
-        padding: 22px;
-      }
-
-      .work-body h3 {
-        margin: 0;
-        font-size: 26px;
-        line-height: 1.05;
-      }
-
-      .work-body p {
-        margin: 0;
-        color: var(--muted);
-      }
-
-      .gallery-drawer {
-        display: grid;
-        justify-items: center;
-        margin-top: 18px;
-        border: 0;
-        background: transparent;
-      }
-
-      .gallery-drawer summary {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        min-height: 48px;
-        border: 1px solid var(--ink);
-        border-radius: var(--radius);
-        background: var(--ink);
-        color: var(--white);
-        padding: 0 18px;
-        font-weight: 850;
-        cursor: pointer;
-        list-style: none;
-      }
-
-      .gallery-drawer summary::-webkit-details-marker {
-        display: none;
-      }
-
-      .gallery-drawer .portfolio-grid {
-        width: 100%;
-      }
-
-      .full-gallery {
-        display: grid;
-        gap: 34px;
-        margin-top: 34px;
-      }
-
-      .gallery-case {
-        border-top: 1px solid var(--line);
-        padding-top: 28px;
-      }
-
-      .gallery-case-head {
-        display: flex;
-        align-items: end;
-        justify-content: space-between;
-        gap: 22px;
-        margin-bottom: 18px;
-      }
-
-      .gallery-case-head h3 {
-        margin: 0;
-        font-size: 30px;
-        line-height: 1.05;
-      }
-
-      .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 12px;
-      }
-
-      .gallery-shot {
-        position: relative;
-        min-height: 280px;
-        border-radius: var(--radius);
-        background: var(--ink);
-        overflow: hidden;
-      }
-
-      .gallery-shot img {
-        height: 100%;
-        min-height: 280px;
-        object-fit: cover;
-        opacity: 0.88;
-      }
-
-      .result {
-        position: relative;
-        min-height: 420px;
-        border-radius: var(--radius);
-        overflow: hidden;
-        background: var(--ink);
-      }
-
-      .result-large {
-        grid-column: span 2;
-      }
-
-      .result img {
-        height: 100%;
-        min-height: 420px;
-        object-fit: cover;
-        opacity: 0.82;
-      }
-
-      .result figcaption {
-        position: absolute;
-        right: 18px;
-        bottom: 18px;
-        left: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 16px;
-        border-radius: var(--radius);
-        background: rgba(13, 15, 17, 0.78);
-        color: var(--white);
-        padding: 16px;
-        backdrop-filter: blur(12px);
-      }
-
-      .result strong,
-      .result span {
-        display: block;
-      }
-
-      .result span {
-        color: rgba(255, 255, 255, 0.68);
-        font-size: 13px;
-      }
-
-      .case-meta {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 18px;
-      }
-
-      .case-meta span {
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        background: var(--white);
-        padding: 8px 12px;
-        color: var(--muted);
-        font-size: 14px;
-        font-weight: 800;
-      }
-
-      .reviews {
-        background: var(--white);
-      }
-
-      .review-layout {
-        display: grid;
-        gap: 18px;
-      }
-
-      .google-rating-card {
-        display: grid;
-        grid-template-columns: minmax(240px, auto) minmax(0, 1fr) auto;
-        align-items: center;
-        gap: 22px;
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        background: var(--paper);
-        padding: 26px;
-        box-shadow: 0 14px 34px rgba(13, 15, 17, 0.08);
-      }
-
-      .google-rating-top {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-      }
-
-      .google-mark {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        background: var(--white);
-        color: #4285f4;
-        font-size: 30px;
-        font-weight: 900;
-        box-shadow: inset 0 0 0 1px rgba(13, 15, 17, 0.08);
-      }
-
-      .google-rating-card strong {
-        display: block;
-        font-size: 42px;
-        line-height: 0.95;
-      }
-
-      .google-rating-card span,
-      .google-rating-card p {
-        color: var(--muted);
-      }
-
-      .google-rating-card p {
-        margin: 0;
-      }
-
-      .review-grid {
-        display: grid;
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-        gap: 18px;
-      }
-
-      .review {
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        background: var(--white);
-        padding: 24px;
-        box-shadow: 0 12px 28px rgba(13, 15, 17, 0.07);
-      }
-
-      .review-head {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 14px;
-      }
-
-      .review-person {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-
-      .review-avatar {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-        background: var(--ink);
-        color: var(--white);
-        font-weight: 900;
-      }
-
-      .review .google-mark {
-        width: 30px;
-        height: 30px;
-        flex: 0 0 auto;
-        font-size: 19px;
-      }
-
-      .review h3 {
-        margin: 0;
-        font-size: 19px;
-        line-height: 1.1;
-      }
-
-      .stars {
-        color: #f5a623;
-        letter-spacing: 0;
-        margin-top: 16px;
-      }
-
-      .review blockquote {
-        margin: 20px 0 16px;
-        color: #1b1f22;
-        font-size: 16px;
-        line-height: 1.55;
-      }
-
-      .review cite {
-        color: var(--muted);
-        font-style: normal;
-      }
-
-      @media (max-width: 1240px) {
-        .review-grid {
-          grid-template-columns: repeat(3, minmax(0, 1fr));
-        }
-      }
-
-      .faq {
-        background: var(--paper);
-      }
-
-      .faq-list {
-        display: grid;
-        gap: 10px;
-      }
-
-      details {
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        background: var(--white);
-      }
-
-      summary {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 16px;
-        padding: 20px 22px;
-        cursor: pointer;
-        font-weight: 850;
-      }
-
-      summary::-webkit-details-marker {
-        display: none;
-      }
-
-      details p {
-        margin: 0;
-        padding: 0 22px 22px;
-        color: var(--muted);
-      }
-
-      .final-cta {
-        background:
-          linear-gradient(90deg, rgba(13, 15, 17, 0.92), rgba(13, 15, 17, 0.55)),
-          url("assets/hero/godoy-mobile-detailing-hero.jpeg?v=5")
-            center / cover;
-        color: var(--white);
-      }
-
-      .cta-panel {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) auto;
-        gap: 24px;
-        align-items: center;
-      }
-
-      .cta-panel h2 {
-        max-width: 760px;
-        margin: 0;
-        font-size: clamp(34px, 5vw, 64px);
-        line-height: 1;
-      }
-
-      .cta-panel p {
-        max-width: 640px;
-        margin: 18px 0 0;
-        color: rgba(255, 255, 255, 0.78);
-        font-size: 18px;
-      }
-
-      .footer {
-        background: var(--ink);
-        color: rgba(255, 255, 255, 0.72);
-        padding: 38px 22px 98px;
-      }
-
-      .footer-inner {
-        display: flex;
-        justify-content: space-between;
-        gap: 24px;
-        max-width: 1180px;
-        margin: 0 auto;
-      }
-
-      .footer-brand-lockup {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 18px;
-        margin-bottom: 18px;
-      }
-
-      .footer-godoy-logo {
-        width: 150px;
-        height: auto;
-      }
-
-      .footer-sonax-logo {
-        width: 145px;
-        height: auto;
-        border-radius: var(--radius);
-        background: var(--white);
-        padding: 8px;
-      }
-
-      .footer strong {
-        color: var(--white);
-      }
-
-      .footer-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 12px;
-      }
-
-      .footer-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        min-height: 40px;
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        border-radius: var(--radius);
-        padding: 0 12px;
-        color: var(--white);
-        font-weight: 800;
-      }
-
-      .mobile-bar {
-        position: fixed;
-        right: 12px;
-        bottom: 12px;
-        left: 12px;
-        z-index: 30;
-        display: none;
-        gap: 10px;
-        padding: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        border-radius: var(--radius);
-        background: rgba(13, 15, 17, 0.92);
-        box-shadow: var(--shadow);
-        backdrop-filter: blur(16px);
-      }
-
-      .mobile-bar .btn {
-        flex: 1;
-        min-width: 0;
-        padding: 0 12px;
-      }
-
-      @media (max-width: 980px) {
-        .nav-links {
-          position: fixed;
-          top: 72px;
-          right: 0;
-          left: 0;
-          display: none;
-          flex-direction: column;
-          align-items: stretch;
-          border-top: 1px solid rgba(255, 255, 255, 0.12);
-          background: rgba(13, 15, 17, 0.98);
-          padding: 18px 22px;
-        }
-
-        .nav-links.is-open {
-          display: flex;
-        }
-
-        .menu-toggle {
-          display: inline-flex;
-        }
-
-        .hero-inner,
-        .section-head,
-        .premium-grid,
-        .review-layout,
-        .area-layout,
-        .quote-layout,
-        .cta-panel,
-        .plan-callout,
-        .sonax-panel {
-          grid-template-columns: 1fr;
-        }
-
-        .hero-inner {
-          min-height: auto;
-          padding-top: 62px;
-        }
-
-        .quote-panel {
-          align-self: auto;
-          max-width: 560px;
-        }
-
-        .quote-section .quote-panel {
-          max-width: none;
-        }
-
-        .package-grid,
-        .review-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .google-rating-card {
-          grid-template-columns: 1fr;
-          justify-items: start;
-        }
-
-        .results-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .portfolio-grid,
-        .gallery-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .trust-grid,
-        .step-grid,
-        .sonax-proof-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .area-map {
-          position: relative;
-          top: auto;
-        }
-
-        .reel-proof {
-          justify-content: flex-start;
-        }
-      }
-
-      @media (max-width: 680px) {
-        .nav {
-          min-height: 66px;
-          padding-inline: 14px;
-        }
-
-        .brand-logo {
-          width: 132px;
-          height: 48px;
-        }
-
-        .nav-actions .btn {
-          display: none;
-        }
-
-        .hero {
-          min-height: auto;
-          background-position: 61% 58%;
-        }
-
-        .hero-inner {
-          padding: 54px 16px 60px;
-        }
-
-        .hero h1 {
-          font-size: 44px;
-        }
-
-        .hero-copy {
-          font-size: 17px;
-        }
-
-        .hero-proof,
-        .trust-grid,
-        .step-grid,
-        .sonax-proof-grid,
-        .results-grid,
-        .portfolio-grid,
-        .gallery-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .credential-pill {
-          width: 100%;
-          justify-content: center;
-        }
-
-        .result-large {
-          grid-column: span 1;
-        }
-
-        .work-carousel {
-          grid-auto-columns: minmax(280px, 88vw);
-        }
-
-        .compare-shot,
-        .compare-shot img {
-          min-height: 260px;
-        }
-
-        .transformation-reel {
-          height: 620px;
-          min-height: 620px;
-        }
-
-        .reel-slide {
-          grid-template-columns: 1fr;
-        }
-
-        .reel-slide.is-split {
-          grid-template-columns: 1fr 1fr;
-        }
-
-        .reel-shot,
-        .reel-shot img {
-          min-height: 310px;
-        }
-
-        .transformation-body {
-          align-items: flex-start;
-          flex-direction: column;
-        }
-
-        .gallery-case-head {
-          align-items: flex-start;
-          flex-direction: column;
-        }
-
-        .trust {
-          min-height: auto;
-          border-right: 0;
-          border-bottom: 1px solid var(--line);
-        }
-
-        section {
-          padding: 64px 16px;
-        }
-
-        .showcase,
-        .showcase-copy,
-        .area-map,
-        .result,
-        .result img {
-          min-height: 390px;
-        }
-
-        .package-body,
-        .step,
-        .premium-item,
-        .review {
-          padding: 20px;
-        }
-
-        .result figcaption {
-          align-items: flex-start;
-          flex-direction: column;
-        }
-
-        .footer-inner {
-          flex-direction: column;
-        }
-
-        .mobile-bar {
-          display: flex;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="#top" aria-label="Godoy Auto Detailing home">
-          <img
-            class="brand-logo"
-            src="assets/godoy-auto-detailing-logo-transparent.png"
-            alt="Godoy Auto Detailing logo"
-          />
-          <span class="brand-name">Godoy Auto Detailing</span>
-        </a>
-        <div class="nav-links" id="navLinks">
-          <a href="#top">Home</a>
-          <a href="#services">Services</a>
-          <a href="#results">Gallery</a>
-          <a href="#reviews">Review</a>
-          <a href="#quote">Contact Us</a>
-        </div>
-        <div class="nav-actions">
-          <a class="icon-link" href="tel:+447563718790" aria-label="Call Godoy Auto Detailing">
-            <i data-lucide="phone"></i>
-          </a>
-          <a class="btn btn-gold" href="#quote">
-            <i data-lucide="message-circle"></i>
-            Get Quote
-          </a>
-          <button class="icon-button menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-            <i data-lucide="menu"></i>
-          </button>
-        </div>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-inner">
-          <div>
-            <p class="eyebrow"><i data-lucide="sparkles"></i> Premium detailing, paint correction & ceramic coating</p>
-            <h1 id="hero-title">Premium detailing, paint correction and ceramic protection.</h1>
-            <p class="hero-copy">
-              Professional mobile vehicle care across London & Surrey, from safe detailing and deep cleaning to
-              machine polishing and SONAX-backed ceramic coating packages for high-value vehicles.
-            </p>
-            <div class="hero-credentials" aria-label="Professional credentials">
-              <span class="credential-pill">
-                <img src="assets/sonax/sonax-made-in-germany.png" alt="SONAX Made in Germany" />
-                Professional Detailer
-              </span>
-              <span class="credential-pill">
-                <i data-lucide="file-check-2"></i>
-                Coating warranty certificates available
-              </span>
-            </div>
-            <div class="hero-actions">
-              <a class="btn btn-gold" href="#quote">
-                <i data-lucide="message-circle"></i>
-                Request Specialist Quote
-              </a>
-              <a class="btn btn-light" href="#services">
-                <i data-lucide="layers-3"></i>
-                View Services
-              </a>
-            </div>
-            <div class="hero-proof" aria-label="Key service highlights">
-              <div class="proof-item">
-                <strong>At Your Door</strong>
-                <span>Home, work or private residence</span>
-              </div>
-              <div class="proof-item">
-                <strong>Paint First</strong>
-                <span>Correction, gloss and protection focus</span>
-              </div>
-              <div class="proof-item">
-                <strong>SONAX Care</strong>
-                <span>Professional products and warranty options</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="transformations" id="transformations" aria-label="Vehicle transformation reel">
-        <div class="container">
-          <div class="transformation-reel" aria-label="Selected premium vehicle reel">
-            <article class="reel-slide is-split" style="--delay: 0s;">
-              <div class="reel-shot">
-                <img src="assets/reel-pairs/blue-bmw-01.jpeg?v=1" alt="Blue BMW finished with deep gloss" loading="lazy" />
-              </div>
-              <div class="reel-shot">
-                <img src="assets/reel-pairs/blue-bmw-02.jpeg?v=1" alt="Blue BMW front angle after detailing" loading="lazy" />
-              </div>
-            </article>
-            <article class="reel-slide is-split" style="--delay: 7s;">
-              <div class="reel-shot">
-                <img src="assets/reel-pairs/porsche-black-01.jpg?v=1" alt="Black Porsche front finish after detailing" loading="lazy" />
-              </div>
-              <div class="reel-shot">
-                <img src="assets/reel-pairs/porsche-black-02.jpg?v=1" alt="Black Porsche rear finish after detailing" loading="lazy" />
-              </div>
-            </article>
-            <article class="reel-slide is-split" style="--delay: 14s;">
-              <div class="reel-shot">
-                <img src="assets/gallery/range-rover-velar-raynes-park/range-rover-velar-raynes-park-04.jpg?v=8" alt="Range Rover Velar finished after detailing" loading="lazy" />
-              </div>
-              <div class="reel-shot">
-                <img src="assets/reel-pairs/velar-black-rear.jpeg?v=1" alt="Range Rover Velar rear finish after detailing" loading="lazy" />
-              </div>
-            </article>
-            <article class="reel-slide is-split" style="--delay: 21s;">
-              <div class="reel-shot">
-                <img src="assets/reel-pairs/mini-01.jpeg?v=2" alt="Mini Cooper finished after detailing" loading="lazy" />
-              </div>
-              <div class="reel-shot">
-                <img src="assets/reel-pairs/mini-02.jpeg?v=2" alt="Mini Cooper rear finish after detailing" loading="lazy" />
-              </div>
-            </article>
-            <article class="reel-slide is-split" style="--delay: 28s;">
-              <div class="reel-shot">
-                <img src="assets/reel-pairs/velar-red-01.jpeg?v=1" alt="Red Range Rover Velar rear finish" loading="lazy" />
-              </div>
-              <div class="reel-shot">
-                <img src="assets/reel-pairs/velar-red-02.jpeg?v=1" alt="Red Range Rover Velar front finish" loading="lazy" />
-              </div>
-            </article>
-            <article class="reel-slide is-split" style="--delay: 35s;">
-              <div class="reel-shot">
-                <img src="assets/reel-pairs/raptor-01.jpg?v=1" alt="Ford Raptor finished after detailing work" loading="lazy" />
-              </div>
-              <div class="reel-shot">
-                <img src="assets/reel-pairs/raptor-02.jpg?v=1" alt="Ford Raptor front finish after detailing work" loading="lazy" />
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="services" id="services">
-        <div class="container">
-          <div class="section-head">
-            <div>
-              <p class="section-kicker">Services</p>
-              <h2>Specialist services for gloss, correction and long-term protection.</h2>
-            </div>
-            <p>
-              Detailing remains the foundation, but the focus is paintwork: safer washing, careful preparation,
-              machine polishing and ceramic coating options for owners who expect a sharper finish.
-            </p>
-          </div>
-
-          <div class="package-grid">
-            <article class="package">
-              <img
-                class="package-media"
-                src="assets/gallery/bmw-330e-full-deep-clean/bmw-330e-full-deep-clean-06.jpg"
-                alt="BMW 330e after maintenance valet"
-              />
-              <div class="package-body">
-                <span class="tag"><i data-lucide="clock-3"></i> Regular upkeep</span>
-                <h3>Maintenance Valet</h3>
-                <div class="price"><strong>£70.00</strong><span>from</span></div>
-                <p class="price-note">Guide price; final quote depends on vehicle size and condition.</p>
-                <details class="package-included">
-                  <summary><span>What's Included</span><i data-lucide="chevron-down"></i></summary>
-                  <ul class="features">
-                    <li><i data-lucide="check"></i><span>Regular Care Package</span></li>
-                    <li><i data-lucide="check"></i><span>Snow foam & citrus pre-wash</span></li>
-                    <li><i data-lucide="check"></i><span>Wheels & tyres cleaned</span></li>
-                    <li><i data-lucide="check"></i><span>Safe hand wash (two bucket method)</span></li>
-                    <li><i data-lucide="check"></i><span>Wax or ceramic spray sealant</span></li>
-                    <li><i data-lucide="check"></i><span>Vehicle dried with air blower & towels</span></li>
-                    <li><i data-lucide="check"></i><span>Tyres dressed (satin finish)</span></li>
-                    <li><i data-lucide="check"></i><span>Interior vacuum, dashboard & trims wiped</span></li>
-                    <li><i data-lucide="check"></i><span>Windows cleaned & air freshener</span></li>
-                  </ul>
-                </details>
-                <a class="btn btn-dark" href="#quote">Request Slot</a>
-              </div>
-            </article>
-
-            <article class="package">
-              <img
-                class="package-media"
-                src="assets/gallery/mini-countryman-raynes-park/mini-countryman-raynes-park-05.jpg"
-                alt="Mini Cooper Countryman interior after deep clean"
-              />
-              <div class="package-body">
-                <span class="tag"><i data-lucide="armchair"></i> Interior focused</span>
-                <h3>Interior Deep Clean</h3>
-                <div class="price"><strong>£90.00</strong><span>from</span></div>
-                <p class="price-note">Guide price; final quote depends on vehicle size and condition.</p>
-                <details class="package-included">
-                  <summary><span>What's Included</span><i data-lucide="chevron-down"></i></summary>
-                  <ul class="features">
-                    <li><i data-lucide="check"></i><span>Full Interior Restoration</span></li>
-                    <li><i data-lucide="check"></i><span>Boot steamed, vacuumed & deodorised</span></li>
-                    <li><i data-lucide="check"></i><span>Pet hair removal (extra if excessive)</span></li>
-                    <li><i data-lucide="check"></i><span>Cloth seats steam cleaned & extracted</span></li>
-                    <li><i data-lucide="check"></i><span>Leather & alcantara cleaned & restored</span></li>
-                    <li><i data-lucide="check"></i><span>Carpets & floor mats steamed</span></li>
-                    <li><i data-lucide="check"></i><span>Dashboard, trims & steering wheel cleaned</span></li>
-                    <li><i data-lucide="check"></i><span>Door cards & centre console detailed</span></li>
-                    <li><i data-lucide="check"></i><span>Air vents detailed with compressed air</span></li>
-                    <li><i data-lucide="check"></i><span>Glass cleaned & air freshener</span></li>
-                  </ul>
-                </details>
-                <a class="btn btn-dark" href="#quote">Clean Interior</a>
-              </div>
-            </article>
-
-            <article class="package featured">
-              <img
-                class="package-media"
-                src="assets/gallery/range-rover-velar-raynes-park/range-rover-velar-raynes-park-05.jpg"
-                alt="Range Rover Velar after full deep clean"
-              />
-              <div class="package-body">
-                <span class="tag"><i data-lucide="star"></i> Most requested</span>
-                <h3>Full Deep Clean</h3>
-                <div class="price"><strong>£140.00</strong><span>from</span></div>
-                <p class="price-note">Guide price; final quote depends on vehicle size and condition.</p>
-                <details class="package-included">
-                  <summary><span>What's Included</span><i data-lucide="chevron-down"></i></summary>
-                  <ul class="features">
-                    <li><i data-lucide="check"></i><span>Complete Vehicle Reset</span></li>
-                    <li><i data-lucide="check"></i><span>Full interior deep clean</span></li>
-                    <li><i data-lucide="check"></i><span>Seats & carpets extraction</span></li>
-                    <li><i data-lucide="check"></i><span>Air vents & crevices detailed</span></li>
-                    <li><i data-lucide="check"></i><span>Glass cleaned inside</span></li>
-                    <li><i data-lucide="check"></i><span>Wheels & arches detailed</span></li>
-                    <li><i data-lucide="check"></i><span>Snow foam pre-wash and safe hand wash</span></li>
-                    <li><i data-lucide="check"></i><span>Badges & door shuts detailed</span></li>
-                    <li><i data-lucide="check"></i><span>Tar, fallout and exterior decontamination</span></li>
-                    <li><i data-lucide="check"></i><span>Ceramic spray sealant</span></li>
-                    <li><i data-lucide="check"></i><span>Tyres dressed & gloss finish</span></li>
-                  </ul>
-                </details>
-                <a class="btn btn-primary" href="#quote">Get Quote</a>
-              </div>
-            </article>
-
-            <article class="package specialist">
-              <img
-                class="package-media"
-                src="assets/gallery/porsche-macan-s-enhancement/porsche-macan-s-enhancement-07.jpg"
-                alt="Porsche Macan S after enhancement detail"
-              />
-              <div class="package-body">
-                <span class="tag"><i data-lucide="sparkle"></i> Paintwork focused</span>
-                <h3>Enhancement Detail</h3>
-                <div class="price"><strong>£350.00</strong><span>from</span></div>
-                <p class="price-note">Guide price; final quote depends on vehicle size and paint condition.</p>
-                <details class="package-included">
-                  <summary><span>What's Included</span><i data-lucide="chevron-down"></i></summary>
-                  <ul class="features">
-                    <li><i data-lucide="check"></i><span>Paint Correction & Gloss</span></li>
-                    <li><i data-lucide="check"></i><span>Wheels & tyres deep cleaned</span></li>
-                    <li><i data-lucide="check"></i><span>Snow foam & citrus pre-wash</span></li>
-                    <li><i data-lucide="check"></i><span>Two bucket safe wash</span></li>
-                    <li><i data-lucide="check"></i><span>Tar, iron & water spot removal</span></li>
-                    <li><i data-lucide="check"></i><span>Clay bar decontamination</span></li>
-                    <li><i data-lucide="check"></i><span>Engine bay detailed & dressed</span></li>
-                    <li><i data-lucide="check"></i><span>Safe drying with air blower & towels</span></li>
-                    <li><i data-lucide="check"></i><span>Single-stage machine polish</span></li>
-                    <li><i data-lucide="check"></i><span>Swirl & light scratch reduction</span></li>
-                    <li><i data-lucide="check"></i><span>Deep gloss & colour enhancement</span></li>
-                    <li><i data-lucide="check"></i><span>Ceramic / sealant protection (6 months)</span></li>
-                    <li><i data-lucide="check"></i><span>Wheels dressed</span></li>
-                    <li><i data-lucide="check"></i><span>24-36 month coating upgrade available</span></li>
-                  </ul>
-                </details>
-                <a class="btn btn-dark" href="#quote">Improve Gloss</a>
-              </div>
-            </article>
-
-            <article class="package specialist">
-              <img
-                class="package-media"
-                src="assets/gallery/ford-raptor-ceramic-coating/ford-raptor-ceramic-coating-02.jpg"
-                alt="Ford Raptor after ceramic coating"
-              />
-              <div class="package-body">
-                <span class="tag"><i data-lucide="shield"></i> SONAX warranty option</span>
-                <h3>Ceramic Coating</h3>
-                <div class="price"><strong>£250.00</strong><span>from</span></div>
-                <p class="price-note">Guide price; final quote depends on vehicle size, paint condition and coating choice.</p>
-                <details class="package-included">
-                  <summary><span>What's Included</span><i data-lucide="chevron-down"></i></summary>
-                  <ul class="features">
-                    <li><i data-lucide="check"></i><span>Extra Protection After Enhancement</span></li>
-                    <li><i data-lucide="check"></i><span>Paint ceramic coating - from £250</span></li>
-                    <li><i data-lucide="check"></i><span>Glass coating - from £80</span></li>
-                    <li><i data-lucide="check"></i><span>Wheel coating - from £150</span></li>
-                    <li><i data-lucide="check"></i><span>Fabric coating - from £70</span></li>
-                    <li><i data-lucide="check"></i><span>Enhances gloss & durability</span></li>
-                    <li><i data-lucide="check"></i><span>Hydrophobic & UV protection</span></li>
-                    <li><i data-lucide="check"></i><span>Easier maintenance</span></li>
-                    <li><i data-lucide="check"></i><span>Warranty certificate available on eligible SONAX coating packages</span></li>
-                    <li><i data-lucide="check"></i><span>Aftercare guidance provided at handover</span></li>
-                    <li><i data-lucide="check"></i><span>Final price depends on vehicle size, paint condition and coating choice</span></li>
-                    <li><i data-lucide="check"></i><span>Available after Enhancement Detail or Multi-Stage Paint Correction</span></li>
-                  </ul>
-                </details>
-                <a class="btn btn-dark" href="#quote">Ask About Coating</a>
-              </div>
-            </article>
-
-            <article class="package specialist">
-              <img
-                class="package-media"
-                src="assets/gallery/paint-correction/porsche-paint-correction-cover.jpg"
-                alt="Porsche paint correction finish inside detailing workshop"
-              />
-              <div class="package-body">
-                <span class="tag"><i data-lucide="orbit"></i> Quoted service</span>
-                <h3>Multi-Stage Paint Correction</h3>
-                <div class="price"><strong>Quote</strong><span>after inspection</span></div>
-                <p class="price-note">Quoted after paint assessment, vehicle size and desired correction level.</p>
-                <details class="package-included">
-                  <summary><span>What's Included</span><i data-lucide="chevron-down"></i></summary>
-                  <ul class="features">
-                    <li><i data-lucide="check"></i><span>Contact us to consult a multiple-stage paint correction</span></li>
-                    <li><i data-lucide="check"></i><span>Paint condition assessment before confirming correction level</span></li>
-                    <li><i data-lucide="check"></i><span>Bespoke correction plan for deeper swirls, oxidation, haze and paint defects</span></li>
-                    <li><i data-lucide="check"></i><span>Recommended before higher-end ceramic coating</span></li>
-                    <li><i data-lucide="check"></i><span>Best for owners seeking a sharper, glossier finish</span></li>
-                  </ul>
-                </details>
-                <a class="btn btn-dark" href="#quote">Request Assessment</a>
-              </div>
-            </article>
-
-          </div>
-
-          <div class="plan-callout">
-            <div>
-              <span class="tag"><i data-lucide="repeat-2"></i> Regular clients</span>
-              <h3>Monthly Maintenance Plan</h3>
-              <p>
-                Available after a Full Deep Clean. Designed for clients who want priority scheduling and a consistently
-                clean car without needing another full reset every month.
-              </p>
-            </div>
-            <a class="btn btn-primary" href="#quote">Ask About The Plan</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="sonax-section" id="sonax">
-        <div class="container sonax-panel">
-          <div class="sonax-copy">
-            <p class="section-kicker">SONAX Professional Detailer</p>
-            <h2>Professional training across complete vehicle care.</h2>
-            <p>
-              Godoy Auto Detailing can now present SONAX Professional Detailer recognition on the site. The training
-              supports a complete approach to vehicle care, from safe washing and interior care to paint preparation,
-              machine polishing, protection systems and aftercare guidance.
-            </p>
-            <div class="sonax-proof-grid" aria-label="SONAX service benefits">
-              <div class="sonax-proof">
-                <strong>Complete vehicle care</strong>
-                <span>Training across wash process, interior care, paint preparation and protection.</span>
-              </div>
-              <div class="sonax-proof">
-                <strong>Paintwork refinement</strong>
-                <span>Inspection-led polishing for swirls, haze, gloss improvement and coating preparation.</span>
-              </div>
-              <div class="sonax-proof">
-                <strong>Warranty certificate</strong>
-                <span>Available at handover for eligible SONAX ceramic coating work.</span>
-              </div>
-            </div>
-          </div>
-          <aside class="sonax-card" aria-label="SONAX Professional Detailer credential">
-            <img src="assets/sonax/sonax-professional-detailer.png" alt="SONAX Professional Detailer" />
-            <div class="sonax-card-body">
-              <img class="sonax-logo-line" src="assets/sonax/sonax-made-in-germany.png" alt="SONAX Made in Germany" />
-              <p>
-                Professional detailing, paintwork preparation, protection and aftercare presented with clear
-                expectations for premium vehicles.
-              </p>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="results" id="results">
-        <div class="container">
-          <div class="section-head">
-            <div>
-              <p class="section-kicker">Gallery</p>
-              <h2>Recent work, kept visual and easy to scan.</h2>
-            </div>
-            <p>
-              A clean selection of finished details and premium vehicles. More transformations live on Instagram.
-            </p>
-            <a
-              class="btn btn-primary"
-              href="https://www.instagram.com/godoy.detailing/"
-              target="_blank"
-              rel="noreferrer"
-              style="margin-top: 18px"
-            >
-              <i data-lucide="camera"></i>
-              View Instagram
-            </a>
-          </div>
-
-          <div class="portfolio-grid" aria-label="Premium detailing gallery">
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/g-wagon-01-foam.jpg?v=1" alt="Mercedes G-Wagon foam wash before detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/g-wagon-02-exterior.jpg?v=1" alt="Mercedes G-Wagon exterior finish after detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/g-wagon-03-interior.jpg?v=1" alt="Mercedes G-Wagon interior detail after cleaning" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/defender-01-studio-front.jpg?v=1" alt="Land Rover Defender front finish under studio lighting" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/defender-02-studio-side.jpg?v=1" alt="Land Rover Defender side exterior finish after detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/defender-03-studio-finish.jpg?v=1" alt="Land Rover Defender exterior finish after detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/ford-raptor-01-foam.jpg?v=1" alt="Ford Raptor foam wash before detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/ford-raptor-02-exterior.jpg?v=1" alt="Ford Raptor exterior finish after detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/ford-raptor-03-interior.jpg?v=1" alt="Ford Raptor interior detail after cleaning" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/bmw-blue-01-foam.jpg?v=1" alt="Blue BMW foam wash before detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/bmw-blue-02-exterior.jpg?v=1" alt="Blue BMW exterior finish after detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/bmw-blue-03-interior.jpg?v=1" alt="Blue BMW interior detail after cleaning" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/mazda-01-foam.jpg?v=1" alt="Mazda foam wash before detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/mazda-02-exterior.jpg?v=1" alt="Mazda exterior finish after detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/mazda-03-interior.jpg?v=1" alt="Mazda interior detail after cleaning" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/porsche-macan-01-exterior.jpg?v=1" alt="Porsche Macan front exterior finish" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/porsche-macan-02-exterior.jpg?v=1" alt="Porsche Macan side exterior finish" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/porsche-macan-03-interior.jpg?v=1" alt="Porsche Macan interior detail after cleaning" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/mini-countryman-01-foam.jpg?v=1" alt="Mini Countryman foam wash before detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/mini-countryman-02-exterior.jpg?v=1" alt="Mini Countryman exterior finish after detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/mini-countryman-03-interior.jpg?v=1" alt="Mini Countryman interior detail after cleaning" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/range-rover-01-foam.jpg?v=1" alt="Range Rover foam wash before detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/range-rover-02-exterior.jpg?v=1" alt="Range Rover exterior finish after detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/range-rover-03-interior.jpg?v=1" alt="Range Rover interior detail after cleaning" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/bmw-touring-01-foam.jpg?v=1" alt="BMW Touring foam wash before detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/bmw-touring-02-exterior.jpg?v=1" alt="BMW Touring exterior finish after detailing" loading="lazy" decoding="async" />
-            </figure>
-            <figure class="portfolio-shot">
-              <img src="assets/gallery/premium-selection/bmw-touring-03-interior.jpg?v=1" alt="BMW Touring interior detail after cleaning" loading="lazy" decoding="async" />
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section class="reviews" id="reviews">
-        <div class="container">
-          <div class="section-head">
-            <div>
-              <p class="section-kicker">Client Confidence</p>
-              <h2>Words from customers who booked the service.</h2>
-            </div>
-            <p>
-              Recent Google feedback and a direct link for clients who want to read more before booking.
-            </p>
-            <a
-              class="btn btn-primary"
-              href="https://share.google/v8OAEAz9z5mlDtGRI"
-              target="_blank"
-              rel="noreferrer"
-              style="margin-top: 18px"
-            >
-              <i data-lucide="star"></i>
-              Read Google Reviews
-            </a>
-          </div>
-          <div class="review-layout">
-            <aside class="google-rating-card" aria-label="Google review rating summary">
-              <div>
-                <div class="google-rating-top">
-                  <span class="google-mark" aria-hidden="true">G</span>
-                  <div>
-                    <strong>5.0</strong>
-                    <span>Google rating</span>
-                  </div>
-                </div>
-                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-              </div>
-              <p>Real client feedback from mobile detailing, deep clean, enhancement and protection bookings.</p>
-              <a class="btn btn-dark" href="https://share.google/v8OAEAz9z5mlDtGRI" target="_blank" rel="noreferrer">
-                <i data-lucide="external-link"></i>
-                View On Google
-              </a>
-            </aside>
-
-            <div class="review-grid">
-              <article class="review">
-                <div class="review-head">
-                  <div class="review-person">
-                    <span class="review-avatar" aria-hidden="true">F</span>
-                    <div>
-                      <h3>Franci Feitosa</h3>
-                      <cite>Google review</cite>
-                    </div>
-                  </div>
-                  <span class="google-mark" aria-hidden="true">G</span>
-                </div>
-                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-                <blockquote>
-                  Fantastic job on my car. Very professional and thorough, with great attention to detail. Excellent
-                  service from start to finish.
-                </blockquote>
-              </article>
-              <article class="review">
-                <div class="review-head">
-                  <div class="review-person">
-                    <span class="review-avatar" aria-hidden="true">P</span>
-                    <div>
-                      <h3>Patricia Machado</h3>
-                      <cite>Google review</cite>
-                    </div>
-                  </div>
-                  <span class="google-mark" aria-hidden="true">G</span>
-                </div>
-                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-                <blockquote>
-                  From now on only Vitor will do detailing on my car. Great job, loved the job you have done. My car
-                  looked amazing.
-                </blockquote>
-              </article>
-              <article class="review">
-                <div class="review-head">
-                  <div class="review-person">
-                    <span class="review-avatar" aria-hidden="true">J</span>
-                    <div>
-                      <h3>Jucelino Macedo</h3>
-                      <cite>Google review</cite>
-                    </div>
-                  </div>
-                  <span class="google-mark" aria-hidden="true">G</span>
-                </div>
-                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-                <blockquote>
-                  Amazing service from Godoy Auto Detailing. They removed all the mold from my car and made it look and
-                  smell like new again.
-                </blockquote>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="process">
-        <div class="container">
-          <div class="section-head">
-            <div>
-              <p class="section-kicker">Why Choose Us</p>
-              <h2>Specialist finish, clear process, professional aftercare.</h2>
-            </div>
-            <p>
-              A focused mobile service for owners who care about paint condition, gloss, protection and honest guidance
-              before committing to correction or coating work.
-            </p>
-          </div>
-          <div class="step-grid">
-            <article class="step">
-              <span>01</span>
-              <h3>Vehicle assessment first</h3>
-              <p>Photos, condition and expectations are reviewed before recommending detailing, correction or coating work.</p>
-            </article>
-            <article class="step">
-              <span>02</span>
-              <h3>Careful preparation</h3>
-              <p>Safe wash, decontamination and polishing preparation protect the finish before any coating is applied.</p>
-            </article>
-            <article class="step">
-              <span>03</span>
-              <h3>SONAX product knowledge</h3>
-              <p>Professional training supports the full care process, from cleaning and preparation to protection.</p>
-            </article>
-            <article class="step">
-              <span>04</span>
-              <h3>Aftercare mindset</h3>
-              <p>Clients receive maintenance guidance so the gloss and protection are easier to preserve.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="areas" id="areas">
-        <div class="container area-layout">
-          <div class="area-map">
-            <div class="map-label">
-              <h2>London & Surrey</h2>
-              <p>Mobile detailing across London, Surrey and selected surrounding areas.</p>
-            </div>
-          </div>
-          <div>
-            <div class="section-head" style="display: block; margin-bottom: 28px">
-              <p class="section-kicker">Service Areas</p>
-              <h2>Mobile detailing across London and Surrey.</h2>
-              <p style="margin-top: 16px">
-                We aim to cover as much of London and Surrey as possible. Send us your postcode on WhatsApp and we will
-                confirm availability for your area.
-              </p>
-            </div>
-            <div class="plan-callout">
-              <div>
-                <span class="tag"><i data-lucide="map-pin"></i> Check your area</span>
-                <h3>Send your postcode before deciding.</h3>
-                <p>
-                  We do not want to turn away good work just because your area is not shown on the page. Message us and
-                  we will confirm if we can come to you.
-                </p>
-              </div>
-              <a class="btn btn-primary" href="#quote">Check My Area</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="faq" id="faq">
-        <div class="container">
-          <div class="section-head">
-            <div>
-              <p class="section-kicker">FAQ</p>
-              <h2>Before you book.</h2>
-            </div>
-            <p>
-              Quick answers about access, weather, parking and timing, so the booking feels clear from the start.
-            </p>
-          </div>
-          <div class="faq-list">
-            <details open>
-              <summary>Do you bring water and power? <i data-lucide="plus"></i></summary>
-              <p>
-                Yes, the mobile setup is designed to be self-contained. If a safe outdoor tap or mains power is
-                available, it can be used, but the service does not depend on it for most packages.
-              </p>
-            </details>
-            <details>
-              <summary>What happens if it rains? <i data-lucide="plus"></i></summary>
-              <p>
-                Light rain is usually manageable, especially for interior work and maintenance valets. Heavy rain or
-                weather that would compromise the result can be rearranged.
-              </p>
-            </details>
-            <details>
-              <summary>Can you work in apartments or underground parking? <i data-lucide="plus"></i></summary>
-              <p>
-                In many cases, yes. The key requirements are safe access, permission to work, enough space around the
-                vehicle and parking for the mobile setup nearby.
-              </p>
-            </details>
-            <details>
-              <summary>How long does a detail take? <i data-lucide="plus"></i></summary>
-              <p>
-                Maintenance valets can be completed faster, while full details, paint enhancement and ceramic coatings
-                take longer. The quote will include an estimated time window.
-              </p>
-            </details>
-            <details>
-              <summary>Do you only work on prestige cars? <i data-lucide="plus"></i></summary>
-              <p>
-                No. We work on everyday cars, family cars, work vehicles, new cars and prestige vehicles. The standard
-                is careful professional car care, whatever you drive.
-              </p>
-            </details>
-            <details>
-              <summary>Do you offer ceramic coating and paint correction? <i data-lucide="plus"></i></summary>
-              <p>
-                Yes. Ceramic coating starts from £250.00 and is available after an enhancement detail or paint
-                correction, because the paint needs proper preparation first. Eligible SONAX ceramic coating packages can
-                include a warranty certificate and aftercare guidance at handover. Paint correction is quoted after
-                assessment.
-              </p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <section class="quote-section" id="quote" aria-labelledby="quote-title">
-        <div class="quote-layout">
-          <div class="quote-intro">
-            <p class="eyebrow"><i data-lucide="message-circle"></i> Request your quote</p>
-            <h2>Send your car details, paint goals and preferred area.</h2>
-            <p>
-              Tell us what you drive, where you are and whether you want gloss enhancement, paint correction, ceramic
-              coating or a full detail. We will recommend the right route before you book.
-            </p>
-          </div>
-          <aside class="quote-panel" aria-labelledby="quote-title">
-            <header>
-              <h2 id="quote-title">Get a tailored quote</h2>
-              <p>Vehicle, service, location and any notes. The form opens WhatsApp with your details ready to send.</p>
-            </header>
-            <form class="quote-form" id="quoteForm">
-              <label class="field">
-                <span>Vehicle</span>
-                <input name="vehicle" placeholder="VW Golf, Tesla Model 3, Range Rover..." required />
-              </label>
-              <label class="field">
-                <span>Service</span>
-                <select name="service" required>
-                  <option value="">Choose a service</option>
-                  <option>Maintenance Valet - from £70.00</option>
-                  <option>Interior Deep Clean - from £90.00</option>
-                  <option>Full Deep Clean - from £140.00</option>
-                  <option>Enhancement Detail - from £350.00</option>
-                  <option>Ceramic Coating - from £250.00</option>
-                  <option>SONAX Ceramic Coating + Warranty Certificate</option>
-                  <option>Multi-Stage Paint Correction</option>
-                  <option>Monthly Maintenance Plan</option>
-                </select>
-              </label>
-              <label class="field">
-                <span>Location</span>
-                <input name="location" placeholder="Chelsea, Cobham, Weybridge..." required />
-              </label>
-              <label class="field">
-                <span>Notes</span>
-                <textarea name="notes" placeholder="Interior condition, pet hair, swirls, parking access..."></textarea>
-              </label>
-              <button class="btn btn-primary" type="submit">
-                <i data-lucide="send"></i>
-                Send via WhatsApp
-              </button>
-              <p class="privacy-note">
-                No online payment is taken through this form. Your details are only used to reply with availability and a quote.
-              </p>
-            </form>
-          </aside>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        <div>
-          <div class="footer-brand-lockup" aria-label="Brand and product partner logos">
-            <img class="footer-godoy-logo" src="assets/godoy-auto-detailing-logo-transparent.png" alt="Godoy Auto Detailing" />
-            <img class="footer-sonax-logo" src="assets/sonax/sonax-made-in-germany.png" alt="SONAX Made in Germany" />
-          </div>
-          <strong>Godoy Auto Detailing</strong>
-          <p>Mobile valeting, detailing and protection for everyday, family, prestige and performance cars across London & Surrey.</p>
-        </div>
-        <div>
-          <strong>Call or WhatsApp</strong>
-          <p><a href="tel:+447563718790">07563 718 790</a></p>
-          <div class="footer-links">
-            <a class="footer-link" href="https://wa.me/447563718790" target="_blank" rel="noreferrer">
-              <i data-lucide="message-circle"></i>
-              WhatsApp
-            </a>
-            <a
-              class="footer-link"
-              href="https://www.instagram.com/godoy.detailing/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i data-lucide="camera"></i>
-              Instagram
-            </a>
-            <a
-              class="footer-link"
-              href="https://share.google/v8OAEAz9z5mlDtGRI"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i data-lucide="star"></i>
-              Google Reviews
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <div class="mobile-bar" aria-label="Mobile quick actions">
-      <a class="btn btn-gold" href="#quote"><i data-lucide="message-circle"></i> Quote</a>
-      <a class="btn btn-light" href="tel:+447563718790"><i data-lucide="phone"></i> Call</a>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Godoy Auto Detailing | Premium Mobile Detailing in London &amp; Surrey</title>
+<meta name="description" content="Premium mobile detailing, valeting, deep cleaning, paint enhancement and SONAX ceramic protection for family, luxury, performance and prestige cars across London and Surrey.">
+<meta name="keywords" content="mobile car detailing London, mobile valeting Surrey, ceramic coating London, paint correction Surrey, SONAX detailer London">
+<link rel="canonical" href="https://www.godoyautodetailing.com/">
+<meta name="theme-color" content="#101417">
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Godoy Auto Detailing | Premium Mobile Detailing Across London & Surrey">
+<meta property="og:description" content="Premium mobile detailing, valeting, deep cleaning, paint enhancement and SONAX ceramic protection for family cars, luxury, performance and supercars.">
+<meta property="og:image" content="https://www.godoyautodetailing.com/assets/hero/godoy-mobile-detailing-hero.jpeg">
+<meta property="og:url" content="https://www.godoyautodetailing.com/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="https://www.godoyautodetailing.com/assets/godoy-auto-detailing-logo-transparent.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- ============================================================
+  GOOGLE ADS / GA4 TRACKING — add your tag ID and uncomment.
+============================================================ -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
+
+<!-- ============================================================
+  META (FACEBOOK/INSTAGRAM) PIXEL — add your Pixel ID and uncomment.
+============================================================ -->
+<!--
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'YOUR_PIXEL_ID');
+  fbq('track', 'PageView');
+</script>
+-->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoDetailing",
+  "name": "Godoy Auto Detailing",
+  "image": "https://www.godoyautodetailing.com/assets/hero/godoy-mobile-detailing-hero.jpeg",
+  "telephone": "+447563718790",
+  "priceRange": "££",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "3" },
+  "areaServed": [
+    {"@type": "City", "name": "London"},
+    {"@type": "AdministrativeArea", "name": "Surrey"}
+  ],
+  "sameAs": ["https://www.instagram.com/godoy.detailing/"],
+  "url": "https://www.godoyautodetailing.com/"
+}
+</script>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <img src="https://www.godoyautodetailing.com/assets/godoy-auto-detailing-logo-transparent.png" alt="Godoy Auto Detailing" class="logo-img">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#services">Services</a>
+      <a href="#sonax">SONAX</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#quote">Contact</a>
+    </nav>
+
+    <div class="header-cta">
+      <a href="tel:+447563718790" class="btn btn-ghost header-phone">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1L6.6 10.8z"/></svg>
+        <span>07563 718 790</span>
+      </a>
+      <a href="#quote" class="btn btn-primary" id="headerQuoteBtn">Get Quote</a>
     </div>
 
-    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-    <script>
-      const quotePhone = "447563718790";
-      const menuToggle = document.querySelector(".menu-toggle");
-      const navLinks = document.querySelector("#navLinks");
-      const quoteForm = document.querySelector("#quoteForm");
-      function refreshIcons() {
-        if (window.lucide) {
-          window.lucide.createIcons({ strokeWidth: 1.8 });
-        }
-      }
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-      menuToggle.addEventListener("click", () => {
-        const isOpen = navLinks.classList.toggle("is-open");
-        menuToggle.setAttribute("aria-expanded", String(isOpen));
-      });
+<!-- ================= HERO ================= -->
+<section class="hero" style="background-image:url('https://www.godoyautodetailing.com/assets/hero/godoy-mobile-detailing-hero.jpeg');">
+  <div class="hero-overlay"></div>
+  <div class="hero-grain"></div>
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <p class="eyebrow">Premium detailing, paint correction &amp; ceramic coating</p>
+      <h1>The Detail Your Car Deserves &mdash; At Your Door.</h1>
+      <p class="hero-sub">Professional mobile vehicle care across London &amp; Surrey — from safe detailing and deep cleaning to machine polishing and SONAX-backed ceramic coating packages for high-value vehicles.</p>
 
-      navLinks.addEventListener("click", () => {
-        navLinks.classList.remove("is-open");
-        menuToggle.setAttribute("aria-expanded", "false");
-      });
+      <div class="sonax-strip">
+        <img src="https://www.godoyautodetailing.com/assets/sonax/sonax-made-in-germany.png" alt="SONAX Made in Germany" class="sonax-badge-img">
+        <span>Professional Detailer &middot; Coating warranty certificates available</span>
+      </div>
 
-      quoteForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-        const formData = new FormData(quoteForm);
-        const message = [
-          "Hi Godoy Auto Detailing, I would like a quote.",
-          "",
-          `Vehicle: ${formData.get("vehicle")}`,
-          `Service: ${formData.get("service")}`,
-          `Location: ${formData.get("location")}`,
-          `Notes: ${formData.get("notes") || "No extra notes yet."}`,
-        ].join("\n");
-        window.location.href = `https://wa.me/${quotePhone}?text=${encodeURIComponent(message)}`;
-      });
+      <div class="hero-actions">
+        <a href="#quote" class="btn btn-primary btn-lg" id="whatsappHeroBtn">Request Specialist Quote</a>
+        <a href="#services" class="btn btn-outline btn-lg">View Services</a>
+      </div>
 
-      refreshIcons();
-    </script>
-  </body>
+      <a href="https://share.google/v8OAEAz9z5mlDtGRI" target="_blank" rel="noopener" class="hero-rating">
+        <span class="hero-rating-stars">★★★★★</span>
+        <span class="hero-rating-text"><strong>5.0</strong> rating on Google &middot; London &amp; Surrey clients</span>
+      </a>
+
+      <ul class="hero-trust">
+        <li><strong>At Your Door</strong><span>Home, work or private residence</span></li>
+        <li><strong>Paint First</strong><span>Correction, gloss &amp; protection focus</span></li>
+        <li><strong>SONAX Care</strong><span>Professional products &amp; warranty options</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST STRIP ================= -->
+<section class="trust-strip">
+  <div class="container trust-strip-inner">
+    <div class="trust-item"><span>🚐</span>Fully Mobile</div>
+    <div class="trust-item"><span>🛡️</span>Fully Insured</div>
+    <div class="trust-item"><span>⭐</span>5.0 Google Rating</div>
+    <div class="trust-item"><span>🧪</span>SONAX Professional Detailer</div>
+    <div class="trust-item"><span>📍</span>London &amp; Surrey</div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section" id="services">
+  <div class="container">
+    <p class="section-eyebrow">What We Offer</p>
+    <h2>Specialist Services for Gloss, Correction &amp; Long-Term Protection</h2>
+    <p class="section-sub">Detailing is the foundation, but the focus is paintwork: safer washing, careful preparation, machine polishing and ceramic coating options for owners who expect a sharper finish. Prices below are guide prices &mdash; your final quote depends on vehicle size and condition.</p>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <p class="service-tag">Regular upkeep</p>
+        <h3>Maintenance Valet</h3>
+        <p class="price">From £70<span>.00</span></p>
+        <ul class="service-list">
+          <li>Snow foam &amp; citrus pre-wash</li>
+          <li>Wheels &amp; tyres cleaned</li>
+          <li>Safe hand wash (two bucket method)</li>
+          <li>Wax or ceramic spray sealant</li>
+          <li>Interior vacuum, dashboard &amp; trims wiped</li>
+          <li>Windows cleaned &amp; air freshener</li>
+        </ul>
+        <a href="#quote" class="service-link" data-service="Maintenance Valet - from £70.00">Request Slot &rarr;</a>
+      </div>
+
+      <div class="service-card">
+        <p class="service-tag">Interior focused</p>
+        <h3>Interior Deep Clean</h3>
+        <p class="price">From £90<span>.00</span></p>
+        <ul class="service-list">
+          <li>Boot steamed, vacuumed &amp; deodorised</li>
+          <li>Cloth seats steam cleaned &amp; extracted</li>
+          <li>Leather &amp; alcantara cleaned &amp; restored</li>
+          <li>Carpets &amp; floor mats steamed</li>
+          <li>Door cards &amp; centre console detailed</li>
+          <li>Air vents detailed with compressed air</li>
+        </ul>
+        <a href="#quote" class="service-link" data-service="Interior Deep Clean - from £90.00">Clean Interior &rarr;</a>
+      </div>
+
+      <div class="service-card featured">
+        <div class="service-badge">Most Popular</div>
+        <p class="service-tag">Most requested</p>
+        <h3>Full Deep Clean</h3>
+        <p class="price">From £140<span>.00</span></p>
+        <ul class="service-list">
+          <li>Full interior deep clean + extraction</li>
+          <li>Air vents &amp; crevices detailed</li>
+          <li>Wheels &amp; arches detailed</li>
+          <li>Snow foam pre-wash &amp; safe hand wash</li>
+          <li>Tar, fallout &amp; exterior decontamination</li>
+          <li>Ceramic spray sealant &amp; tyres dressed</li>
+        </ul>
+        <a href="#quote" class="service-link" data-service="Full Deep Clean - from £140.00">Get Quote &rarr;</a>
+      </div>
+
+      <div class="service-card">
+        <p class="service-tag">Paintwork focused</p>
+        <h3>Enhancement Detail</h3>
+        <p class="price">From £350<span>.00</span></p>
+        <ul class="service-list">
+          <li>Tar, iron &amp; water spot removal</li>
+          <li>Clay bar decontamination</li>
+          <li>Engine bay detailed &amp; dressed</li>
+          <li>Single-stage machine polish</li>
+          <li>Swirl &amp; light scratch reduction, deep gloss</li>
+          <li>Ceramic / sealant protection (6 months)</li>
+        </ul>
+        <a href="#quote" class="service-link" data-service="Enhancement Detail - from £350.00">Improve Gloss &rarr;</a>
+      </div>
+
+      <div class="service-card">
+        <p class="service-tag">Extra protection</p>
+        <h3>Ceramic Coating</h3>
+        <p class="price">From £250<span>.00</span></p>
+        <ul class="service-list">
+          <li>Paint ceramic coating &mdash; from £250</li>
+          <li>Glass coating &mdash; from £80</li>
+          <li>Wheel coating &mdash; from £150</li>
+          <li>Fabric coating &mdash; from £70</li>
+          <li>Hydrophobic &amp; UV protection</li>
+          <li>Warranty certificate on eligible SONAX packages</li>
+        </ul>
+        <a href="#quote" class="service-link" data-service="Ceramic Coating - from £250.00">Ask About Coating &rarr;</a>
+      </div>
+
+      <div class="service-card">
+        <p class="service-tag">Quoted service</p>
+        <h3>Multi-Stage Paint Correction</h3>
+        <p class="price">Quote<span> after inspection</span></p>
+        <ul class="service-list">
+          <li>Paint condition assessment first</li>
+          <li>Bespoke correction plan for deeper swirls, oxidation &amp; haze</li>
+          <li>Recommended before higher-end ceramic coating</li>
+          <li>Best for a sharper, glossier finish</li>
+        </ul>
+        <a href="#quote" class="service-link" data-service="Multi-Stage Paint Correction">Request Assessment &rarr;</a>
+      </div>
+
+    </div>
+
+    <div class="plan-banner">
+      <div>
+        <p class="section-eyebrow" style="margin-bottom:6px;">Regular clients</p>
+        <h3>Monthly Maintenance Plan</h3>
+        <p>Available after a Full Deep Clean. Priority scheduling and a consistently clean car without needing a full reset every month.</p>
+      </div>
+      <a href="#quote" class="btn btn-outline" data-service="Monthly Maintenance Plan">Ask About The Plan</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SONAX ================= -->
+<section class="section section-dark" id="sonax">
+  <div class="container sonax-inner">
+    <div>
+      <p class="section-eyebrow">SONAX Professional Detailer</p>
+      <h2>Professional Training Across Complete Vehicle Care</h2>
+      <p class="section-sub" style="color:#B8C7DB;">SONAX Professional Detailer recognition supports a complete approach to vehicle care &mdash; from safe washing and interior care to paint preparation, machine polishing, protection systems and aftercare guidance.</p>
+
+      <div class="sonax-points">
+        <div><strong>Complete vehicle care</strong><span>Training across wash process, interior care, paint preparation and protection.</span></div>
+        <div><strong>Paintwork refinement</strong><span>Inspection-led polishing for swirls, haze, gloss improvement and coating preparation.</span></div>
+        <div><strong>Warranty certificate</strong><span>Available at handover for eligible SONAX ceramic coating work.</span></div>
+      </div>
+    </div>
+    <div class="sonax-badges">
+      <img src="https://www.godoyautodetailing.com/assets/sonax/sonax-professional-detailer.png" alt="SONAX Professional Detailer badge">
+      <img src="https://www.godoyautodetailing.com/assets/sonax/sonax-made-in-germany.png" alt="SONAX Made in Germany badge">
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section section-alt" id="gallery">
+  <div class="container">
+    <p class="section-eyebrow">Our Work</p>
+    <h2>Recent Results, Real Vehicles</h2>
+    <p class="section-sub">Finished work across family, luxury and performance vehicles. More on <a href="https://www.instagram.com/godoy.detailing/" target="_blank" rel="noopener" style="color:var(--blue-light);font-weight:600;">Instagram</a>.</p>
+
+    <div class="gallery-filters" id="galleryFilters">
+      <button class="gallery-filter active" data-filter="all">All</button>
+      <button class="gallery-filter" data-filter="exterior">Exterior</button>
+      <button class="gallery-filter" data-filter="interior">Interior</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Exterior — ordered best/most eye-catching first -->
+      <figure class="gallery-item" data-category="exterior">
+        <img src="https://www.godoyautodetailing.com/assets/gallery/premium-selection/g-wagon-02-exterior.jpg?v=1" alt="Mercedes G-Wagon after mobile detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="https://www.godoyautodetailing.com/assets/gallery/premium-selection/defender-03-studio-finish.jpg?v=1" alt="Land Rover Defender after mobile detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="images/gallery/IMG_1648.jpg" alt="Porsche 911 Turbo after mobile detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="images/gallery/IMG_4040.jpg" alt="Lexus LC500 after mobile detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="images/gallery/IMG_3982.jpg" alt="BMW M3 after mobile detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="https://www.godoyautodetailing.com/assets/reel-pairs/porsche-black-01.jpg?v=1" alt="Porsche after mobile detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="https://www.godoyautodetailing.com/assets/gallery/range-rover-velar-raynes-park/range-rover-velar-raynes-park-04.jpg?v=8" alt="Range Rover Velar after mobile detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="images/gallery/IMG_2123.jpg" alt="Range Rover Evoque after mobile detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="images/gallery/IMG_3809.jpg" alt="BMW X5 after mobile detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="https://www.godoyautodetailing.com/assets/gallery/premium-selection/ford-raptor-02-exterior.jpg?v=1" alt="Ford Raptor after mobile detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="images/gallery/IMG_3032.jpg" alt="BMW 3 Series Touring after mobile detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="images/gallery/IMG_2437.jpg" alt="Mini Countryman JCW after mobile detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="https://www.godoyautodetailing.com/assets/gallery/bmw-330e-full-deep-clean/bmw-330e-full-deep-clean-06.jpg" alt="BMW 330e after maintenance valet" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="images/gallery/IMG_3947.jpg" alt="Volvo XC40 after mobile detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="images/gallery/IMG_3886.jpg" alt="Mercedes A-Class after mobile detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="exterior">
+        <img src="images/gallery/IMG_3476.jpg" alt="Jaecoo SUV after mobile detailing" loading="lazy">
+      </figure>
+
+      <!-- Interior — ordered best/most eye-catching first -->
+      <figure class="gallery-item" data-category="interior">
+        <img src="images/gallery/IMG_3342.jpg" alt="Mercedes G-Wagon AMG interior after detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="interior">
+        <img src="images/gallery/IMG_3296.jpg" alt="Land Rover Defender interior after detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="interior">
+        <img src="images/gallery/IMG_2178.jpg" alt="Porsche Macan S interior after detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="interior">
+        <img src="images/gallery/IMG_2475.jpg" alt="Range Rover Velar interior after detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="interior">
+        <img src="images/gallery/IMG_3891.jpg" alt="Mercedes A-Class interior after detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="interior">
+        <img src="https://www.godoyautodetailing.com/assets/gallery/mini-countryman-raynes-park/mini-countryman-raynes-park-05.jpg" alt="Mini Countryman interior after deep clean" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="interior">
+        <img src="images/gallery/IMG_3961.jpg" alt="Volvo XC40 interior after detailing" loading="lazy">
+      </figure>
+      <figure class="gallery-item" data-category="interior">
+        <img src="images/gallery/IMG_3478.jpg" alt="Jaecoo SUV interior after detailing" loading="lazy">
+      </figure>
+    </div>
+
+    <div class="gallery-cta">
+      <p>Want your car looking like this?</p>
+      <a href="#quote" class="btn btn-primary btn-lg">Get Your Free Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox overlay for gallery images -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<!-- ================= REVIEWS ================= -->
+<section class="section" id="reviews">
+  <div class="container">
+    <p class="section-eyebrow">Client Confidence</p>
+    <h2>Words From Customers Who Booked the Service</h2>
+    <p class="section-sub">Recent Google feedback from mobile detailing, deep clean, enhancement and protection bookings. <a href="https://share.google/v8OAEAz9z5mlDtGRI" target="_blank" rel="noopener" style="color:var(--blue-light);font-weight:600;">Read all Google Reviews &rarr;</a></p>
+
+    <div class="rating-banner">
+      <span class="rating-score">5.0</span>
+      <div>
+        <div class="stars">★★★★★</div>
+        <span>Google rating &middot; based on client reviews</span>
+      </div>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>&ldquo;Fantastic job on my car. Very professional and thorough, with great attention to detail. Excellent service from start to finish.&rdquo;</p>
+        <div class="testimonial-author"><span class="avatar">F</span><span class="testimonial-name">Franci Feitosa <em>Google review</em></span></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>&ldquo;From now on only Vitor will do detailing on my car. Great job, loved the job you have done. My car looked amazing.&rdquo;</p>
+        <div class="testimonial-author"><span class="avatar">P</span><span class="testimonial-name">Patricia Machado <em>Google review</em></span></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>&ldquo;Amazing service from Godoy Auto Detailing. They removed all the mold from my car and made it look and smell like new again.&rdquo;</p>
+        <div class="testimonial-author"><span class="avatar">J</span><span class="testimonial-name">Jucelino Macedo <em>Google review</em></span></div>
+      </div>
+    </div>
+
+    <!-- Live Google Reviews (Elfsight) — auto-syncs from your Google Business Profile.
+         Manage design/settings at elfsight.com dashboard. -->
+    <div class="live-reviews-header">
+      <h3>Latest Reviews</h3>
+      <span class="live-badge"><span class="live-dot"></span>Live from Google</span>
+    </div>
+    <div class="live-reviews-slot" id="liveReviewsSlot">
+      <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+      <div class="elfsight-app-62427545-ac09-4093-99f7-21db7bc9bb1e" data-elfsight-app-lazy></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section class="section section-alt" id="why-us">
+  <div class="container">
+    <p class="section-eyebrow">Why Choose Us</p>
+    <h2>Specialist Finish, Clear Process, Professional Aftercare</h2>
+    <p class="section-sub">A focused mobile service for owners who care about paint condition, gloss, protection and honest guidance before committing to correction or coating work.</p>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <span class="step-num">01</span>
+        <h3>Vehicle Assessment First</h3>
+        <p>Photos, condition and expectations are reviewed before recommending detailing, correction or coating work.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">02</span>
+        <h3>Careful Preparation</h3>
+        <p>Safe wash, decontamination and polishing preparation protect the finish before any coating is applied.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">03</span>
+        <h3>SONAX Product Knowledge</h3>
+        <p>Professional training supports the full care process, from cleaning and preparation to protection.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">04</span>
+        <h3>Aftercare Mindset</h3>
+        <p>Clients receive maintenance guidance so the gloss and protection are easier to preserve.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COVERAGE ================= -->
+<section class="section" id="coverage">
+  <div class="container coverage-inner">
+    <div>
+      <p class="section-eyebrow">Service Areas</p>
+      <h2>Mobile Detailing Across London &amp; Surrey</h2>
+      <p class="section-sub">We aim to cover as much of London and Surrey as possible. Send us your postcode on WhatsApp and we'll confirm availability for your area &mdash; we don't want to turn away good work just because your area isn't listed below.</p>
+      <div class="coverage-tags">
+        <span>Central London</span><span>Wimbledon</span><span>Richmond</span><span>Kingston upon Thames</span>
+        <span>Croydon</span><span>Sutton</span><span>Epsom</span><span>Guildford</span>
+        <span>Woking</span><span>Redhill</span><span>Reigate</span><span>Dorking</span>
+        <span>Esher</span><span>Weybridge</span><span>+ surrounding areas</span>
+      </div>
+      <a href="https://wa.me/447563718790?text=Hi%20Godoy%20Auto%20Detailing%2C%20can%20you%20confirm%20if%20you%20cover%20my%20postcode%3F%20It%27s%3A%20" target="_blank" rel="noopener" class="btn btn-primary">Check My Area on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section section-alt" id="faq">
+  <div class="container">
+    <p class="section-eyebrow">FAQ</p>
+    <h2>Before You Book</h2>
+    <p class="section-sub">Quick answers about access, weather, parking and timing, so the booking feels clear from the start.</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">Do you bring water and power?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Yes, the mobile setup is designed to be self-contained. If a safe outdoor tap or mains power is available it can be used, but the service doesn't depend on it for most packages.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What happens if it rains?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Light rain is usually manageable, especially for interior work and maintenance valets. Heavy rain or weather that would compromise the result can be rearranged.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can you work in apartments or underground parking?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>In many cases, yes. The key requirements are safe access, permission to work, enough space around the vehicle and parking for the mobile setup nearby.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How long does a detail take?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Maintenance valets can be completed faster, while full details, paint enhancement and ceramic coatings take longer. Your quote will include an estimated time window.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you only work on prestige cars?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>No. We work on everyday cars, family cars, work vehicles, new cars and prestige vehicles. The standard is careful, professional car care, whatever you drive.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you offer ceramic coating and paint correction?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Yes. Ceramic coating starts from £250 and is available after an enhancement detail or paint correction, since the paint needs proper preparation first. Eligible SONAX ceramic coating packages can include a warranty certificate and aftercare guidance at handover. Paint correction is quoted after assessment.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUOTE / CONTACT ================= -->
+<section class="section section-dark" id="quote">
+  <div class="container contact-inner">
+    <div class="contact-info">
+      <p class="section-eyebrow">Request Your Quote</p>
+      <h2 style="color:var(--white);">Send Your Car Details, Paint Goals &amp; Preferred Area</h2>
+      <p class="section-sub" style="color:#B8C7DB;">Tell us what you drive, where you are, and whether you want gloss enhancement, paint correction, ceramic coating or a full detail. We'll recommend the right route before you book. The form opens WhatsApp with your details ready to send &mdash; no online payment is taken here.</p>
+
+      <div class="contact-methods">
+        <a href="https://wa.me/447563718790" target="_blank" rel="noopener" class="contact-method">
+          <span class="contact-method-icon">💬</span>
+          <div><strong>WhatsApp</strong><span>07563 718 790</span></div>
+        </a>
+        <a href="tel:+447563718790" class="contact-method">
+          <span class="contact-method-icon">📞</span>
+          <div><strong>Call Us</strong><span>07563 718 790</span></div>
+        </a>
+        <a href="https://www.instagram.com/godoy.detailing/" target="_blank" rel="noopener" class="contact-method">
+          <span class="contact-method-icon">📷</span>
+          <div><strong>Instagram</strong><span>@godoy.detailing</span></div>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="quoteForm">
+      <div class="form-row">
+        <label for="customerName">Your Name</label>
+        <input type="text" id="customerName" name="customerName" placeholder="e.g. Vitor Godoy" required>
+      </div>
+
+      <div class="form-row">
+        <label for="vehicle">Vehicle (make &amp; model)</label>
+        <input type="text" id="vehicle" name="vehicle" placeholder="e.g. BMW 330e" required>
+      </div>
+
+      <div class="form-row">
+        <label for="service">Service</label>
+        <select id="service" name="service">
+          <option value="Maintenance Valet - from £70.00">Maintenance Valet &mdash; from £70.00</option>
+          <option value="Interior Deep Clean - from £90.00">Interior Deep Clean &mdash; from £90.00</option>
+          <option value="Full Deep Clean - from £140.00">Full Deep Clean &mdash; from £140.00</option>
+          <option value="Enhancement Detail - from £350.00">Enhancement Detail &mdash; from £350.00</option>
+          <option value="Ceramic Coating - from £250.00">Ceramic Coating &mdash; from £250.00</option>
+          <option value="SONAX Ceramic Coating + Warranty Certificate">SONAX Ceramic Coating + Warranty Certificate</option>
+          <option value="Multi-Stage Paint Correction">Multi-Stage Paint Correction</option>
+          <option value="Monthly Maintenance Plan">Monthly Maintenance Plan</option>
+          <option value="Not sure yet">Not sure yet</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="location">Location / Postcode</label>
+        <input type="text" id="location" name="location" placeholder="e.g. Wimbledon, SW19" required>
+      </div>
+
+      <div class="form-row">
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Anything else we should know?"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg" id="formSubmitBtn">Send via WhatsApp</button>
+      <p class="form-note">No online payment is taken through this form. Your details are only used to reply with availability and a quote.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="https://www.godoyautodetailing.com/assets/godoy-auto-detailing-logo-transparent.png" alt="Godoy Auto Detailing" class="footer-logo">
+      <p>Mobile valeting, detailing and protection for everyday, family, prestige and performance cars across London &amp; Surrey.</p>
+      <div class="footer-sonax-badge">
+        <img src="https://www.godoyautodetailing.com/assets/sonax/sonax-made-in-germany.png" alt="SONAX Made in Germany">
+        <span>SONAX Certified Partner</span>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#services">Services</a>
+      <a href="#sonax">SONAX</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <a href="tel:+447563718790">07563 718 790</a>
+      <a href="https://wa.me/447563718790" target="_blank" rel="noopener">WhatsApp Us</a>
+      <a href="https://www.instagram.com/godoy.detailing/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://share.google/v8OAEAz9z5mlDtGRI" target="_blank" rel="noopener">Google Reviews</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Godoy Auto Detailing. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ================= STICKY MOBILE WHATSAPP BUTTON ================= -->
+<a href="https://wa.me/447563718790?text=Hi%20Godoy%20Auto%20Detailing%2C%20I%27d%20like%20a%20free%20quote%20for%20my%20car" target="_blank" rel="noopener" class="sticky-whatsapp" id="stickyWhatsapp" aria-label="Message us on WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.9 9.9 0 0 0 4.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.55 2 12.04 2zm0 18.1h-.01a8.1 8.1 0 0 1-4.14-1.14l-.3-.18-3.09.81.82-3.02-.19-.31a8.13 8.13 0 0 1 6.9-12.35c4.5 0 8.15 3.65 8.15 8.15 0 4.5-3.65 8.14-8.14 8.14zm4.47-6.1c-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42-.14-.01-.3-.01-.46-.01s-.42.06-.64.3c-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+</a>
+
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<script src="js/script.js"></script>
+</body>
 </html>
